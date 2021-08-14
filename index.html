@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASK1</title>
+    <title>ASK1 - Архитектурно-Строительная Компания</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -69,7 +69,7 @@
         <nav class="header__nav">
           <ul class="header__nav-menu">
             <li class="header__nav-menu-item">
-              <a href="" class="header__nav-menu-item-link">Главная</a>
+              <a href="#main" class="header__nav-menu-item-link">Главная</a>
             </li>
             <li class="header__nav-menu-item">
               <a href="" class="header__nav-menu-item-link">Примеры работ</a>
@@ -98,9 +98,8 @@
         </nav>
       </div>
     </header>
-
+    <a name="main" class="anchor-main"></a>
     <main class="main">
-
       <section class="cover">
         <div class="cover__wrapper">
           <h1 class="cover__title">
@@ -127,11 +126,46 @@
         </div>
       </section>
 
+      <section class="gallery">
+        <h2 class="gallery__title">Примеры наших работ</h2>
+        <div class="gallery__wrapper">
+          <div class="gallery__knockout">
+            <div class="gallery__to-left"></div>
+            <ul class="gallery__slides">
+              <li class="gallery__slide">
+                <img src="./images/gallery/1.jpeg" alt="" class="gallery__slide-image active">
+              </li>
+              <li class="gallery__slide">
+                <img src="./images/gallery/2.jpeg" alt="" class="gallery__slide-image">
+              </li>
+              <li class="gallery__slide">
+                <img src="./images/gallery/3.jpeg" alt="" class="gallery__slide-image">
+              </li>
+              <li class="gallery__slide">
+                <img src="./images/gallery/4.jpeg" alt="" class="gallery__slide-image">
+              </li>
+              <li class="gallery__slide">
+                <img src="./images/gallery/5.jpeg" alt="" class="gallery__slide-image">
+              </li>
+            </ul>
+            <div class="gallery__to-right"></div>
+          </div>
+        </div>
+        <div class="gallery__bullets">
+          <span class="gallery__bullet active">&bull;</span>
+          <span class="gallery__bullet">&bull;</span>
+          <span class="gallery__bullet">&bull;</span>
+          <span class="gallery__bullet">&bull;</span>
+          <span class="gallery__bullet">&bull;</span>
+        </div>
+      </section>
+
       <div style="height: 1600px"></div>
-            <!-- padding: 30px;
+      <!-- padding: 30px;
     border: 1px #E6E6E6 solid; -->
     </main>
     <footer class="footer"></footer>
     <script src="./js/index.js"></script>
+    <script src="./js/gallery.js"></script>
   </body>
 </html>
