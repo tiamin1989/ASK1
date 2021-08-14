@@ -632,8 +632,8 @@ html {
 }
 
 .directions__list {
-  margin: 0;
-  padding: 100px 0 0;
+  margin: 60px 0 0;
+  padding: 0;
   max-width: 1200px;
   list-style: none;
 
@@ -733,7 +733,7 @@ html {
 }
 
 .why__paragraph {
-  margin: 30px 0 0;
+  margin: 40px 0 0;
   max-width: 1200px;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
