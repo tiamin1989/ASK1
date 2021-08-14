@@ -1,9 +1,12 @@
 @import url("../fonts/roboto.css");
+@import url("../fonts/hamlin.css");
 
-/* Плавная проекрутка */
+/* Плавная проекрутка и гладкие шрифты */
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Анкор для главной */
@@ -123,7 +126,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: #e2e2e2 1px solid;
   background-color: #f3f3f3;
 }
 
@@ -143,26 +145,36 @@ html {
   width: 90px;
 }
 
-.header__logo-text {
+.header__text-logo-wrapper {
   margin: 0 35px 0 35px;
-  font-size: 52px;
-  color: #000;
-  font-family: "Roboto", Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 52px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media all and (max-width: 890px) {
-  .header__logo-text {
+  .header__text-logo-wrapper {
     margin: 0 20px 0 20px;
   }
 }
 
 @media all and (max-width: 417px) {
-  .header__logo-text {
+  .header__text-logo-wrapper {
     margin: 0 10px 0 10px;
   }
+}
+
+.header__text-logo {
+  margin-bottom: 5px;
+  width: 150px;
+}
+
+.header__text-logo-description {
+  font-size: 9px;
+  color: #000;
+  font-family: 'Hamlin', Tahoma, Verdana, Segoe, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .header__contacts-container {
@@ -239,6 +251,12 @@ html {
   height: 30px;
 }
 
+@media all and (max-width: 587px) {
+  .header__contacts-icon {
+    display: none;
+  }
+}
+
 .header__contacts-text-item {
   font-family: "Roboto", Tahoma, sans-serif;
   font-style: normal;
@@ -278,6 +296,8 @@ html {
   background-color: #fff;
   display: flex;
   justify-content: center;
+  border-top: #e2e2e2 1px solid;
+  border-bottom: #e2e2e2 1px solid;
 }
 
 @media all and (max-width: 1200px) {
@@ -286,50 +306,28 @@ html {
   }
 }
 
-@media all and (max-width: 490px) {
-  .header__nav {
-    justify-content: left;
-  }
-}
-
 .header__nav-menu {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
+  justify-items: center;
   grid-auto-flow: column;
-  gap: 10px;
-}
-
-@media all and (max-width: 1540px) {
-  .header__nav-menu {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
-
-@media all and (max-width: 890px) {
-  .header__nav-menu {
-    grid-template-rows: repeat(3, 1fr);
-  }
-}
-
-@media all and (max-width: 740px) {
-  .header__nav-menu {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
+  gap: 60px;
 }
 
 @media all and (max-width: 490px) {
   .header__nav-menu {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
   }
 }
 
-.header__nav-menu-item:not(:last-child) {
-  margin-right: 70px;
+@media all and (max-width: 400px) {
+  .header__nav-menu {
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+  }
 }
 
 .header__nav-menu-item-link {
@@ -589,4 +587,94 @@ html {
 
 .gallery__bullet.active {
   color: #000;
+}
+
+/* Направления */
+
+.directions {
+  padding: 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.directions__title {
+  margin: 50px 0 0;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+}
+
+.directions__list {
+  margin: 0;
+  padding: 100px 0 0;
+  max-width: 1200px;
+  list-style: none;
+ 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 60px;
+}
+
+@media all and (max-width: 490px) {
+  .directions__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.directions__list-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.directions__item-image {
+  width: 55px;
+}
+
+.directions__item-text {
+  margin-top: 23px;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-weight: 600;
+  color: #000;
+  font-size: 20px;
+  line-height: 1.35;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media all and (max-width: 1200px) {
+  .directions__item-text {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .directions__item-text {
+    font-size: 16px;
+  }
+}
+
+.directions__item-text-description {
+  margin-top: 20px;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-weight: 300;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+@media all and (max-width: 1200px) {
+  .directions__item-text-description {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .directions__item-text-description {
+    font-size: 16px;
+  }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASK1 - Архитектурно-Строительная Компания</title>
+    <title>АСК1 - Архитектурно-Строительная Компания 1</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -18,7 +18,12 @@
         <div class="header__row">
           <div class="header__logo-container">
             <img src="./images/logo.png" alt="ASK1" class="header__logo" />
-            <span class="header__logo-text">АСК1</span>
+            
+            <div class="header__text-logo-wrapper">
+              <!-- <span class="header__text-logo">АСК1</span> -->
+              <img src="./images/logo-text.png" alt="АСК1" class="header__text-logo">
+              <span class="header__text-logo-description">Архитектурно-Строительная Компания</span>
+            </div>
           </div>
 
           <div class="header__contacts-container">
@@ -72,24 +77,10 @@
               <a href="#main" class="header__nav-menu-item-link">Главная</a>
             </li>
             <li class="header__nav-menu-item">
-              <a href="" class="header__nav-menu-item-link">Примеры работ</a>
+              <a href="" class="header__nav-menu-item-link">Проекты</a>
             </li>
             <li class="header__nav-menu-item">
-              <a href="" class="header__nav-menu-item-link">Направления</a>
-            </li>
-            <li class="header__nav-menu-item">
-              <a href="" class="header__nav-menu-item-link">Для чего</a>
-            </li>
-            <li class="header__nav-menu-item">
-              <a href="" class="header__nav-menu-item-link">Примеры домов</a>
-            </li>
-            <li class="header__nav-menu-item">
-              <a href="" class="header__nav-menu-item-link"
-                >Составы проектов и цены</a
-              >
-            </li>
-            <li class="header__nav-menu-item">
-              <a href="" class="header__nav-menu-item-link">Этапы создания</a>
+              <a href="" class="header__nav-menu-item-link">Наши работы</a>
             </li>
             <li class="header__nav-menu-item">
               <a href="" class="header__nav-menu-item-link">Контакты</a>
@@ -107,12 +98,7 @@
           </h1>
           <p class="cover__paragraph">
             <span class="cover__paragraph-item"
-              >&#10149; Индивидуальное проектирование домов</span
-            >
-          </p>
-          <p class="cover__paragraph">
-            <span class="cover__paragraph-item"
-              >&#10149; Архитектурное проектирование домов и коттедже</span
+              >&#10149; Архитектурное проектирование</span
             >
           </p>
           <p class="cover__paragraph">
@@ -120,7 +106,12 @@
           </p>
           <p class="cover__paragraph">
             <span class="cover__paragraph-item"
-              >&#10149; Проект отделки фасада (при наличии строения)</span
+              >&#10149; Редизайн фасада (проект отделки фасада)</span
+            >
+          </p>
+          <p class="cover__paragraph">
+            <span class="cover__paragraph-item"
+              >&#10149; Ландшафтный дизайн</span
             >
           </p>
         </div>
@@ -158,6 +149,37 @@
           <span class="gallery__bullet">&bull;</span>
           <span class="gallery__bullet">&bull;</span>
         </div>
+      </section>
+
+      <section class="directions">
+        <h2 class="directions__title">Направления</h2>
+        <ul class="directions__list">
+          <li class="directions__list-item">
+            <img src="./images/cottage.png" alt="Коттеджи" class="directions__item-image">
+            <span class="directions__item-text">Индивидуальные жилые дома, коттеджи</span>
+          </li>
+          <li class="directions__list-item">
+            <img src="./images/facade.png" alt="Фасады" class="directions__item-image">
+            <span class="directions__item-text">Редизайн фасада</span>
+            <span class="directions__item-text-description">(при наличии строения)</span>
+          </li>
+          <li class="directions__list-item">
+            <img src="./images/bathhouse.png" alt="Бани, беседки>" class="directions__item-image">
+            <span class="directions__item-text">Бани, беседки</span>
+          </li>
+          <li class="directions__list-item">
+            <img src="./images/landscape.png" alt="Ландшафтный дизайн" class="directions__item-image">
+            <span class="directions__item-text">Ландшафтный дизайн</span>
+          </li>
+          <li class="directions__list-item">
+            <img src="./images/interior.png" alt="Дизайн интерьера" class="directions__item-image">
+            <span class="directions__item-text">Дизайн интерьера</span>
+          </li>
+          <li class="directions__list-item">
+            <img src="./images/architect.png" alt="Архитектура" class="directions__item-image">
+            <span class="directions__item-text">Архитектурное проектирование</span>
+          </li>
+        </ul>
       </section>
 
       <div style="height: 1600px"></div>

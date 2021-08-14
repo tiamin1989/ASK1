@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Hamlin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hamlin'), local('Hamlin-Regular'),
+       url('hamlin/Hamlin.otf') format('embedded-opentype'),
+       url('hamlin/Hamlin.ttf') format('truetype');
+}
