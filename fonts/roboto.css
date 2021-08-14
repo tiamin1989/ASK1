@@ -2,6 +2,14 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
+  font-weight: 300;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('roboto/roboto-v20-latin_cyrillic-300.ttf') format('truetype');
+}
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
   src: url('roboto/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
   src: local('Roboto'), local('Roboto-Regular'),
