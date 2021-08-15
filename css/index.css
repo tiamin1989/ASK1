@@ -440,7 +440,7 @@ html {
   }
 }
 
-@media all and (max-width:740px) {
+@media all and (max-width: 740px) {
   .gallery__title {
     font-size: 24px;
   }
@@ -625,7 +625,7 @@ html {
   }
 }
 
-@media all and (max-width:740px) {
+@media all and (max-width: 740px) {
   .directions__title {
     font-size: 24px;
   }
@@ -708,7 +708,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
 }
 
 .why__title {
@@ -726,7 +726,7 @@ html {
   }
 }
 
-@media all and (max-width:740px) {
+@media all and (max-width: 740px) {
   .why__title {
     font-size: 24px;
   }
@@ -749,8 +749,125 @@ html {
   }
 }
 
-@media all and (max-width:740px) {
+@media all and (max-width: 740px) {
   .why__paragraph {
     font-size: 16px;
   }
+}
+
+/* Цены */
+
+.prices {
+  padding: 50px 30px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (max-width: 440px) {
+  .prices {
+    padding: 50px 20px 50px;
+  }
+}
+
+.prices__title {
+  margin: 0;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+}
+
+@media all and (max-width: 1200px) {
+  .prices__title {
+    font-size: 28px;
+  }
+}
+
+@media all and (max-width: 740px) {
+  .prices__title {
+    font-size: 24px;
+  }
+}
+
+.prices__wrapper {
+  align-self: center;
+  margin: 40px 0 0;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+@media all and (max-width: 800px) {
+  .prices__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.prices__item:not(:first-child) {
+  margin-top: 30px;
+}
+
+.prices__item-wrapper {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: #dbdbdb 1px solid;
+}
+
+.prices__item-title {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 600;
+  color: #000;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1.35;
+}
+
+@media all and (max-width: 1200px) {
+  .prices__item-title {
+    font-size: 18px;
+  }
+}
+
+.prices__item-price {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 600;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+@media all and (max-width: 1200px) {
+  .prices__item-price {
+    font-size: 16px;
+  }
+}
+
+.prices__item-list {
+  margin: 8px 0 0;
+  padding: 0 0 0 28px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  font-variant: normal;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.55;
+}
+
+@media all and (max-width: 1200px) {
+  .prices__item-list {
+    font-size: 14px;
+  }
+}
+
+.prices__item-list-item {
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  font-size: inherit;
 }
