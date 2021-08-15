@@ -1,3 +1,5 @@
+import { loadPopupGallery } from "./popup-gallery.js";
+
 const gap = 100;
 let currentImageIndex = 0;
 let currentXposition = 0;
@@ -89,5 +91,9 @@ gallery.addEventListener("touchstart", startTouch, false);
 gallery.addEventListener("touchmove", moveTouch, false);
 dots.forEach((dot, i) => dot.addEventListener("click", () => toDot(i)));
 window.addEventListener('resize', resizeShiftDistance, true);
+
+images.forEach((image, i, array) => {
+  image.addEventListener("click", () => loadPopupGallery(array, i))
+});
 
 toDot(1);

@@ -7,6 +7,7 @@
     <title>АСК1 - Архитектурно-Строительная Компания 1</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
   </head>
   <body class="body">
     <header class="header">
@@ -20,7 +21,6 @@
             <img src="./images/logo.png" alt="ASK1" class="header__logo" />
             
             <div class="header__text-logo-wrapper">
-              <!-- <span class="header__text-logo">АСК1</span> -->
               <img src="./images/logo-text.png" alt="АСК1" class="header__text-logo">
               <span class="header__text-logo-description">Архитектурно-Строительная Компания</span>
             </div>
@@ -124,19 +124,19 @@
             <div class="gallery__to-left"></div>
             <ul class="gallery__slides">
               <li class="gallery__slide">
-                <img src="./images/gallery/1.jpeg" alt="Пример работы" class="gallery__slide-image active">
+                <img src="./images/gallery/1.jpeg" alt="Пример работы" class="gallery__slide-image active" data-full-image="./images/gallery/1.jpeg">
               </li>
               <li class="gallery__slide">
-                <img src="./images/gallery/2.jpeg" alt="Пример работы" class="gallery__slide-image">
+                <img src="./images/gallery/2.jpeg" alt="Пример работы" class="gallery__slide-image" data-full-image="./images/gallery/2.jpeg">
               </li>
               <li class="gallery__slide">
-                <img src="./images/gallery/3.jpeg" alt="Пример работы" class="gallery__slide-image">
+                <img src="./images/gallery/3.jpeg" alt="Пример работы" class="gallery__slide-image" data-full-image="./images/gallery/3.jpeg">
               </li>
               <li class="gallery__slide">
-                <img src="./images/gallery/4.jpeg" alt="Пример работы" class="gallery__slide-image">
+                <img src="./images/gallery/4.jpeg" alt="Пример работы" class="gallery__slide-image" data-full-image="./images/gallery/4.jpeg">
               </li>
               <li class="gallery__slide">
-                <img src="./images/gallery/5.jpeg" alt="Пример работы" class="gallery__slide-image">
+                <img src="./images/gallery/5.jpeg" alt="Пример работы" class="gallery__slide-image" data-full-image="./images/gallery/5.jpeg">
               </li>
             </ul>
             <div class="gallery__to-right"></div>
@@ -274,12 +274,19 @@
         </div>
       </section>
 
-      <div style="height: 1600px"></div>
+      
       <!-- padding: 30px;
     border: 1px #E6E6E6 solid; -->
     </main>
     <footer class="footer"></footer>
-    <script src="./js/index.js"></script>
-    <script src="./js/gallery.js"></script>
+    <div class="popup-gallery">
+      <span class="popup-gallery__close"></span>
+      <span class="popup-gallery__left"></span>
+      <ul class="popup-gallery__slides"></ul>
+      <span class="popup-gallery__right"></span>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/gallery.js"></script>
+    <script type="module" src="./js/popup-gallery.js"></script>
   </body>
 </html>

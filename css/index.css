@@ -545,6 +545,7 @@ html {
   overflow: hidden;
   width: 860px;
   height: 450px;
+  display: flex;
 }
 
 @media all and (max-width: 1200px) {
@@ -570,9 +571,10 @@ html {
 
 .gallery__slide-image {
   width: 100%;
-  height: 100%;
-  opacity: 0.3;
+  object-fit: cover;
+  opacity: .3;
   transition: all ease-in-out 0.3s;
+  cursor: zoom-in;
 }
 
 .gallery__slide-image.active {
@@ -870,4 +872,80 @@ html {
   font-weight: inherit;
   color: inherit;
   font-size: inherit;
+}
+
+.popup-gallery {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(243, 243, 243, 0.9);
+  display: none;
+}
+
+.popup-gallery.active {
+  display: block;
+}
+
+.popup-gallery__close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url("../images/popup-close.svg") no-repeat center;
+  cursor: pointer;
+}
+
+.popup-gallery__left {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 46vh;
+  left: 10px;
+  background: url("../images/arrow.svg") no-repeat center;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.popup-gallery__right {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 46vh;
+  right: 10px;
+  background: url("../images/arrow.svg") no-repeat center;
+  cursor: pointer;
+}
+
+.popup-gallery__slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  height: 80vh;
+  display: flex;
+  gap: 16vw;
+}
+
+.popup-gallery__slide {
+  width: 84vw;
+  height: 80vh;
+  display: none;
+}
+
+.popup-gallery__slide.active {
+  display: flex;
+}
+
+.popup-gallery__slide-image {
+  width: 100%;
+  object-fit: cover;
+  user-select: none;
 }
