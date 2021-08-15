@@ -572,7 +572,7 @@ html {
 .gallery__slide-image {
   width: 100%;
   object-fit: cover;
-  opacity: .3;
+  opacity: 0.3;
   transition: all ease-in-out 0.3s;
   cursor: zoom-in;
 }
@@ -805,6 +805,11 @@ html {
   .prices__wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.prices__item {
+  padding: 30px;
+  border: 1px #e6e6e6 solid;
 }
 
 .prices__item:not(:first-child) {
