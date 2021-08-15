@@ -914,6 +914,11 @@ html {
   background: url("../images/arrow.svg") no-repeat center;
   transform: rotate(180deg);
   cursor: pointer;
+  visibility: hidden;
+}
+
+.popup-gallery__left.active {
+  visibility: visible;
 }
 
 .popup-gallery__right {
@@ -925,6 +930,11 @@ html {
   right: 10px;
   background: url("../images/arrow.svg") no-repeat center;
   cursor: pointer;
+  visibility: hidden;
+}
+
+.popup-gallery__right.active {
+  visibility: visible;
 }
 
 .popup-gallery__slides {

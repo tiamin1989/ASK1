@@ -5,19 +5,25 @@ const left = document.querySelector(".popup-gallery__left");
 const right = document.querySelector(".popup-gallery__right");
 
 let currentImageIndex = 0;
-let currentImages;
+let currentImages = [];
+
+const changeImageIndex = (index) => {
+  currentImageIndex = index;
+  if (index === 0) left.classList.remove("active"); else left.classList.add("active");
+  if (index === currentImages.length - 1) right.classList.remove("active"); else right.classList.add("active");
+};
 
 function toRight() {
   if (currentImageIndex === currentImages.length - 1) return;
   currentImages[currentImageIndex].classList.remove("active");
-  currentImageIndex++;
+  changeImageIndex(currentImageIndex + 1);
   currentImages[currentImageIndex].classList.add("active");
 }
 
 function toLeft() {
   if (currentImageIndex === 0) return;
   currentImages[currentImageIndex].classList.remove("active");
-  currentImageIndex--;
+  changeImageIndex(currentImageIndex - 1);
   currentImages[currentImageIndex].classList.add("active");
 }
 
@@ -31,7 +37,7 @@ function closeGallery() {
 }
 
 export function loadPopupGallery(images, index) {
-  currentImageIndex = index;
+  changeImageIndex(index);
   images.forEach((image, i) => {
     const li = document.createElement("li");
     li.classList.add("popup-gallery__slide");
@@ -53,5 +59,3 @@ export function loadPopupGallery(images, index) {
   right.addEventListener("click", toRight);
   close.addEventListener("click", closeGallery);
 }
-
-
