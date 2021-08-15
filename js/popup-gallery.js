@@ -9,8 +9,10 @@ let currentImages = [];
 
 const changeImageIndex = (index) => {
   currentImageIndex = index;
-  if (index === 0) left.classList.remove("active"); else left.classList.add("active");
-  if (index === currentImages.length - 1) right.classList.remove("active"); else right.classList.add("active");
+  if (index === 0) left.classList.remove("active");
+  else left.classList.add("active");
+  if (index === currentImages.length - 1) right.classList.remove("active");
+  else right.classList.add("active");
 };
 
 function toRight() {

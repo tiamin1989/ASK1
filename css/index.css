@@ -856,7 +856,7 @@ html {
 }
 
 .prices__item-list {
-  margin: 8px 0 0;
+  margin: 20px 0 0;
   padding: 0 0 0 28px;
   font-size: 16px;
   font-style: normal;
@@ -938,20 +938,20 @@ html {
 }
 
 .popup-gallery__slides {
+  max-width: 1070px;
   list-style: none;
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 10%;
-  left: 8%;
-  height: 80vh;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   gap: 16vw;
 }
 
 .popup-gallery__slide {
   width: 84vw;
-  height: 80vh;
   display: none;
 }
 
