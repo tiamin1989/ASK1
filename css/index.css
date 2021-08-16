@@ -965,26 +965,43 @@ html {
 }
 
 .popup-gallery__close {
-  width: 40px;
-  height: 40px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
   position: absolute;
   right: 10px;
   top: 10px;
-  background: url("../images/popup-close.svg") no-repeat center;
+  background-color: rgb(230 230 230 / 30%);
+  background-image: url("../images/popup-close.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 
+.popup-gallery__close:hover {
+  background-color: rgb(230 230 230 / 100%);
+}
+
 .popup-gallery__left {
-  width: 30px;
-  height: 30px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
   position: absolute;
   z-index: 2;
   top: 46vh;
   left: 10px;
-  background: url("../images/arrow.svg") no-repeat center;
+  background-color: rgb(230 230 230 / 30%);
+  background-image: url("../images/arrow.svg");
   transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-position: 55% center;
+  background-size: 20px;
   cursor: pointer;
   visibility: hidden;
+}
+
+.popup-gallery__left:hover {
+  background-color: rgb(230 230 230 / 100%);
 }
 
 .popup-gallery__left.active {
@@ -992,15 +1009,24 @@ html {
 }
 
 .popup-gallery__right {
-  width: 30px;
-  height: 30px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
   position: absolute;
   z-index: 2;
   top: 46vh;
   right: 10px;
-  background: url("../images/arrow.svg") no-repeat center;
+  background-color: rgb(230 230 230 / 30%);
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 55% center;
+  background-size: 20px;
   cursor: pointer;
   visibility: hidden;
+}
+
+.popup-gallery__right:hover {
+  background-color: rgb(230 230 230 / 100%);
 }
 
 .popup-gallery__right.active {
@@ -1023,6 +1049,12 @@ html {
 .popup-gallery__slide {
   width: 84vw;
   display: none;
+}
+
+@media all and (max-width: 800px) {
+  .popup-gallery__slide {
+    width: 100vw;
+  }
 }
 
 .popup-gallery__slide.active {
