@@ -7,7 +7,7 @@
     <title>АСК1 - Архитектурно-Строительная Компания 1</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
   </head>
   <body class="body">
     <header class="header">
@@ -19,10 +19,16 @@
         <div class="header__row">
           <div class="header__logo-container">
             <img src="./images/logo.png" alt="ASK1" class="header__logo" />
-            
+
             <div class="header__text-logo-wrapper">
-              <img src="./images/logo-text.png" alt="АСК1" class="header__text-logo">
-              <span class="header__text-logo-description">Архитектурно-Строительная Компания</span>
+              <img
+                src="./images/logo-text.png"
+                alt="АСК1"
+                class="header__text-logo"
+              />
+              <span class="header__text-logo-description"
+                >Архитектурно-Строительная Компания</span
+              >
             </div>
           </div>
 
@@ -77,7 +83,7 @@
               <a href="#main" class="header__nav-menu-item-link">Главная</a>
             </li>
             <li class="header__nav-menu-item">
-              <a href="" class="header__nav-menu-item-link">Проекты</a>
+              <a href="#gallery" class="header__nav-menu-item-link">Проекты</a>
             </li>
             <li class="header__nav-menu-item">
               <a href="" class="header__nav-menu-item-link">Наши работы</a>
@@ -89,7 +95,7 @@
         </nav>
       </div>
     </header>
-    <a name="main" class="anchor-main"></a>
+    <a name="main" class="anchor"></a>
     <main class="main">
       <section class="cover">
         <div class="cover__wrapper">
@@ -118,25 +124,51 @@
       </section>
 
       <section class="gallery">
-        <h2 class="gallery__title">Примеры наших работ</h2>
+        <a name="gallery" class="anchor"></a>
+        <h2 class="gallery__title">Проекты</h2>
         <div class="gallery__wrapper">
           <div class="gallery__knockout">
             <div class="gallery__to-left"></div>
             <ul class="gallery__slides">
               <li class="gallery__slide">
-                <img src="./images/gallery/1.jpeg" alt="Пример работы" class="gallery__slide-image active" data-full-image="./images/gallery/1.jpeg">
+                <img
+                  src="./images/gallery/1.jpeg"
+                  alt="Пример работы"
+                  class="gallery__slide-image active"
+                  data-full-image="./images/gallery/1.jpeg"
+                />
               </li>
               <li class="gallery__slide">
-                <img src="./images/gallery/2.jpeg" alt="Пример работы" class="gallery__slide-image" data-full-image="./images/gallery/2.jpeg">
+                <img
+                  src="./images/gallery/2.jpeg"
+                  alt="Пример работы"
+                  class="gallery__slide-image"
+                  data-full-image="./images/gallery/2.jpeg"
+                />
               </li>
               <li class="gallery__slide">
-                <img src="./images/gallery/3.jpeg" alt="Пример работы" class="gallery__slide-image" data-full-image="./images/gallery/3.jpeg">
+                <img
+                  src="./images/gallery/3.jpeg"
+                  alt="Пример работы"
+                  class="gallery__slide-image"
+                  data-full-image="./images/gallery/3.jpeg"
+                />
               </li>
               <li class="gallery__slide">
-                <img src="./images/gallery/4.jpeg" alt="Пример работы" class="gallery__slide-image" data-full-image="./images/gallery/4.jpeg">
+                <img
+                  src="./images/gallery/4.jpeg"
+                  alt="Пример работы"
+                  class="gallery__slide-image"
+                  data-full-image="./images/gallery/4.jpeg"
+                />
               </li>
               <li class="gallery__slide">
-                <img src="./images/gallery/5.jpeg" alt="Пример работы" class="gallery__slide-image" data-full-image="./images/gallery/5.jpeg">
+                <img
+                  src="./images/gallery/5.jpeg"
+                  alt="Пример работы"
+                  class="gallery__slide-image"
+                  data-full-image="./images/gallery/5.jpeg"
+                />
               </li>
             </ul>
             <div class="gallery__to-right"></div>
@@ -151,47 +183,137 @@
         </div>
       </section>
 
+      <section class="text text_question">
+        <h2 class="text__title">Зачем нужен архитектурный проект?</h2>
+        <p class="text__paragraph">
+          Если Вы планируете строительство дома и не знаете с чего начать, то
+          Вам необходим качественный архитектурный проект. Наша компания
+          гарантирует правильно составленный проект с учётом всех возможных
+          мелочей.
+        </p>
+        <p class="text__paragraph">
+          Забудьте о перерасходе материалов, непредсказуемых затратах и
+          трудностях при ремонте через несколько лет.
+        </p>
+        <p class="text__paragraph">
+          Мы учтем Ваши личные пожелания и особенности участка, выполнив работу
+          в соответствии всем требованиям и нормам.
+        </p>
+        <p class="text__paragraph">
+          Возможно также и удаленное проектирование, если Вы, к примеру,
+          находитесь в другом регионе. Узнайте стоимость Вашего проекта и
+          задайте интересующие вопросы, отправив запрос на электронную почту
+          <a
+            class="header__contacts-text-item-link"
+            href="mailto:a1master02@mail.ru"
+            >a1master02@mail.ru</a
+          >, либо через WhatsApp
+          <a class="header__contacts-text-item-link" href="tel:+79373220900"
+            >+7 (937) 322-09-00</a
+          >.
+        </p>
+      </section>
+
       <section class="directions">
-        <h2 class="directions__title">Направления</h2>
+        <h2 class="directions__title">Проектируемые направления</h2>
         <ul class="directions__list">
           <li class="directions__list-item">
-            <img src="./images/cottage.png" alt="Коттеджи" class="directions__item-image">
-            <span class="directions__item-text">Индивидуальные жилые дома, коттеджи</span>
+            <img
+              src="./images/cottage.png"
+              alt="Коттеджи"
+              class="directions__item-image"
+            />
+            <span class="directions__item-text"
+              >Индивидуальные жилые дома, коттеджи</span
+            >
           </li>
           <li class="directions__list-item">
-            <img src="./images/facade.png" alt="Фасады" class="directions__item-image">
+            <img
+              src="./images/facade.png"
+              alt="Фасады"
+              class="directions__item-image"
+            />
             <span class="directions__item-text">Редизайн фасада</span>
-            <span class="directions__item-text-description">(при наличии строения)</span>
+            <span class="directions__item-text-description"
+              >(при наличии строения)</span
+            >
           </li>
           <li class="directions__list-item">
-            <img src="./images/bathhouse.png" alt="Бани, беседки>" class="directions__item-image">
+            <img
+              src="./images/bathhouse.png"
+              alt="Бани, беседки>"
+              class="directions__item-image"
+            />
             <span class="directions__item-text">Бани, беседки</span>
           </li>
           <li class="directions__list-item">
-            <img src="./images/landscape.png" alt="Ландшафтный дизайн" class="directions__item-image">
+            <img
+              src="./images/landscape.png"
+              alt="Ландшафтный дизайн"
+              class="directions__item-image"
+            />
             <span class="directions__item-text">Ландшафтный дизайн</span>
           </li>
           <li class="directions__list-item">
-            <img src="./images/interior.png" alt="Дизайн интерьера" class="directions__item-image">
+            <img
+              src="./images/interior.png"
+              alt="Дизайн интерьера"
+              class="directions__item-image"
+            />
             <span class="directions__item-text">Дизайн интерьера</span>
           </li>
           <li class="directions__list-item">
-            <img src="./images/architect.png" alt="Архитектура" class="directions__item-image">
-            <span class="directions__item-text">Архитектурное проектирование</span>
+            <img
+              src="./images/architect.png"
+              alt="Архитектура"
+              class="directions__item-image"
+            />
+            <span class="directions__item-text"
+              >Архитектурное проектирование</span
+            >
           </li>
         </ul>
       </section>
 
-      <section class="why">
-        <h2 class="why__title">Зачем нужен архитектурный проект?</h2>
-        <p class="why__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <section class="text text_discount">
+        <h2 class="text__title">
+          <span class="text__title-zoom-in">10%</span> скидка на удаленное
+          проектирование отделки фасада
+        </h2>
+        <p class="text__paragraph">
+          Проектирование дизайна фасадов (редизайн) востребовано в настоящее
+          время, так как многие, построенные ранее здания, нуждаются в их
+          обновлении.
+        </p>
+        <p class="text__paragraph">
+          Иногда клиент приобретает готовый дом и его всё в нём устраивает,
+          кроме фасадов, которые хотелось бы переделать. Наша компания предложит
+          стильные решения, с использованием инновационных отделочных
+          материалов. Для того, чтобы не допустить ошибку при закупке отделочных
+          материалов и монтаже, в итоге получив долговечные фасады,
+          приковывающие любопытные взгляды, необходимо набраться терпения и
+          выделить денежные средства для изготовления качественного
+          дизайн-проекта.
+        </p>
+        <p class="text__paragraph">
+          От Вас требуются обмеры фасадов, фотографии фасадов, и мы готовы
+          приступать! Узнайте стоимость Вашего проекта и задайте интересующие
+          вопросы, отправив запрос на электронную почту
+          <a
+            class="header__contacts-text-item-link"
+            href="mailto:a1master02@mail.ru"
+            >a1master02@mail.ru</a
+          >, либо через WhatsApp
+          <a class="header__contacts-text-item-link" href="tel:+79373220900"
+            >+7 (937) 322-09-00</a
+          >. Мы ждем именно Вас!
+        </p>
       </section>
 
       <section class="prices">
         <h2 class="prices__title">Составы проектов и стоимость</h2>
         <div class="prices__wrapper">
           <div class="prices__column">
-
             <article class="prices__item">
               <div class="prices__item-wrapper">
                 <h3 class="prices__item-title">Архитектурный проект</h3>
@@ -199,15 +321,23 @@
               </div>
               <ul class="prices__item-list">
                 <li class="prices__item-list-item">3D визуализация</li>
-                <li class="prices__item-list-item">размещение строения на участке</li>
+                <li class="prices__item-list-item">
+                  размещение строения на участке
+                </li>
                 <li class="prices__item-list-item">планы этажей с мебелью</li>
-                <li class="prices__item-list-item">объемно-планировочные решения</li>
+                <li class="prices__item-list-item">
+                  объемно-планировочные решения
+                </li>
                 <li class="prices__item-list-item">фасады</li>
-                <li class="prices__item-list-item">ведомость отделки фасадов</li>
+                <li class="prices__item-list-item">
+                  ведомость отделки фасадов
+                </li>
                 <li class="prices__item-list-item">план кровли</li>
                 <li class="prices__item-list-item">планы теплых полов</li>
                 <li class="prices__item-list-item">разрезы</li>
-                <li class="prices__item-list-item">технико-экономические показатели</li>
+                <li class="prices__item-list-item">
+                  технико-экономические показатели
+                </li>
               </ul>
             </article>
 
@@ -219,11 +349,17 @@
               <ul class="prices__item-list">
                 <li class="prices__item-list-item">3D визуализация</li>
                 <li class="prices__item-list-item">планы этажей с мебелью</li>
-                <li class="prices__item-list-item">объемно-планировочные решения</li>
+                <li class="prices__item-list-item">
+                  объемно-планировочные решения
+                </li>
                 <li class="prices__item-list-item">фасады</li>
-                <li class="prices__item-list-item">ведомость отделки фасадов</li>
+                <li class="prices__item-list-item">
+                  ведомость отделки фасадов
+                </li>
                 <li class="prices__item-list-item">разрезы</li>
-                <li class="prices__item-list-item">технико-экономические показатели</li>
+                <li class="prices__item-list-item">
+                  технико-экономические показатели
+                </li>
               </ul>
             </article>
 
@@ -235,14 +371,14 @@
               <ul class="prices__item-list">
                 <li class="prices__item-list-item">3D визуализация</li>
                 <li class="prices__item-list-item">фасады</li>
-                <li class="prices__item-list-item">ведомость отделки фасадов</li>
+                <li class="prices__item-list-item">
+                  ведомость отделки фасадов
+                </li>
               </ul>
             </article>
-            
           </div>
 
           <div class="prices__column">
-
             <article class="prices__item">
               <div class="prices__item-wrapper">
                 <h3 class="prices__item-title">Дизайн интерьера</h3>
@@ -250,30 +386,53 @@
               </div>
               <ul class="prices__item-list">
                 <li class="prices__item-list-item">обмерный план</li>
-                <li class="prices__item-list-item">2-3 варианта планировочных решений с расстановкой мебели и сантехоборудования</li>
-                <li class="prices__item-list-item">итоговый вариант планировки с расстановкой мебели и сантехоборудования</li>
+                <li class="prices__item-list-item">
+                  2-3 варианта планировочных решений с расстановкой мебели и
+                  сантехоборудования
+                </li>
+                <li class="prices__item-list-item">
+                  итоговый вариант планировки с расстановкой мебели и
+                  сантехоборудования
+                </li>
                 <li class="prices__item-list-item">демонтажный план</li>
                 <li class="prices__item-list-item">план монтажа перегородок</li>
-                <li class="prices__item-list-item">план потолков с размещением освещения</li>
-                <li class="prices__item-list-item">план потолков с размерами</li>
-                <li class="prices__item-list-item">схема размещения освещения</li>
-                <li class="prices__item-list-item">план расстановки выключателей</li>
+                <li class="prices__item-list-item">
+                  план потолков с размещением освещения
+                </li>
+                <li class="prices__item-list-item">
+                  план потолков с размерами
+                </li>
+                <li class="prices__item-list-item">
+                  схема размещения освещения
+                </li>
+                <li class="prices__item-list-item">
+                  план расстановки выключателей
+                </li>
                 <li class="prices__item-list-item">план расстановки розеток</li>
                 <li class="prices__item-list-item">план теплых полов</li>
                 <li class="prices__item-list-item">схема открывания дверей</li>
-                <li class="prices__item-list-item">раскладка плитки по санузлам и кухонному фартуку</li>
-                <li class="prices__item-list-item">план полов с напольными покрытиями</li>
-                <li class="prices__item-list-item">план размещения сантехнического оборудования</li>
-                <li class="prices__item-list-item">разработка карты колористического решения интерьера</li>
-                <li class="prices__item-list-item">подбор отделочных материалов (сводная таблица с указанием выбранных материалов, их количества)</li>
+                <li class="prices__item-list-item">
+                  раскладка плитки по санузлам и кухонному фартуку
+                </li>
+                <li class="prices__item-list-item">
+                  план полов с напольными покрытиями
+                </li>
+                <li class="prices__item-list-item">
+                  план размещения сантехнического оборудования
+                </li>
+                <li class="prices__item-list-item">
+                  разработка карты колористического решения интерьера
+                </li>
+                <li class="prices__item-list-item">
+                  подбор отделочных материалов (сводная таблица с указанием
+                  выбранных материалов, их количества)
+                </li>
                 <li class="prices__item-list-item">визуализация</li>
               </ul>
             </article>
-
           </div>
         </div>
       </section>
-
     </main>
     <footer class="footer"></footer>
     <div class="popup-gallery">

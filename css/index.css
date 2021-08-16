@@ -11,10 +11,10 @@ html {
 
 /* Анкор для главной */
 
-.anchor-main {
+.anchor {
   position: absolute;
   display: block;
-  top: -100px;
+  top: -150px;
 }
 
 .body {
@@ -35,7 +35,6 @@ html {
   position: relative;
   height: 50px;
   cursor: pointer;
-  /* background-color: #000; */
   background-color: #fff;
   display: none;
   border-bottom: 1px solid rgb(226, 226, 226);
@@ -60,7 +59,7 @@ html {
   width: 30px;
   position: absolute;
   height: 3px;
-  background: #7D7D7D;
+  background: #7d7d7d;
   display: block;
   transition: 0.3s;
   border-radius: 5px;
@@ -171,7 +170,8 @@ html {
 }
 
 .header__text-logo-description {
-  font-size: 9px;
+  padding: 0 0 0 3px;
+  font-size: 7px;
   color: #000;
   font-family: "Hamlin", Tahoma, Verdana, Segoe, sans-serif;
   font-style: normal;
@@ -423,6 +423,7 @@ html {
 /* Галерея */
 
 .gallery {
+  position: relative;
   overflow: hidden;
   background-color: #f3f3f3;
 }
@@ -711,7 +712,6 @@ html {
   padding: 50px 20px 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #f3f3f3;
 }
 
@@ -737,14 +737,15 @@ html {
 }
 
 .why__paragraph {
-  margin: 40px 0 0;
+  text-indent: 20px;
+  margin: 20px 0 0;
   max-width: 1200px;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
   color: #000;
   font-size: 20px;
   line-height: 1.55;
-  text-align: center;
+  text-align: justify;
 }
 
 @media all and (max-width: 1200px) {
@@ -755,6 +756,73 @@ html {
 
 @media all and (max-width: 740px) {
   .why__paragraph {
+    font-size: 16px;
+  }
+}
+
+.text {
+  padding: 50px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f3f3;  
+}
+
+.text.text_discount {
+  background: url("../images/discount.svg") no-repeat center #f3f3f3;
+  background-size: 50% 50%;
+}
+
+.text.text_question {
+  background: url("../images/conversation.svg") no-repeat center #f3f3f3;
+  background-size: 50% 50%;
+}
+
+.text__title {
+  margin: 0;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+}
+
+.text__title-zoom-in {
+  font-size: 52px;
+}
+
+@media all and (max-width: 1200px) {
+  .text__title {
+    font-size: 28px;
+  }
+}
+
+@media all and (max-width: 740px) {
+  .text__title {
+    font-size: 24px;
+  }
+}
+
+.text__paragraph {
+  text-indent: 20px;
+  margin: 20px 0 0;
+  max-width: 1200px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+  font-size: 20px;
+  line-height: 1.55;
+  text-align: justify;
+}
+
+@media all and (max-width: 1200px) {
+  .text__paragraph {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 740px) {
+  .text__paragraph {
     font-size: 16px;
   }
 }
@@ -945,7 +1013,7 @@ html {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
