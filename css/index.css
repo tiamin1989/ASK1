@@ -9,7 +9,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Анкор для главной */
+/* Якорь */
 
 .anchor {
   position: absolute;
@@ -206,7 +206,7 @@ html {
   color: #fff;
   background-color: #000;
   border: 0;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 15px 30px 15px 30px;
   transition: all 0.3s ease-out;
   cursor: pointer;
@@ -574,7 +574,8 @@ html {
 
 .photo-slider__slide-image {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: 0.3;
   transition: all ease-in-out 0.3s;
   cursor: zoom-in;
@@ -1097,8 +1098,12 @@ html {
 
 .popup-gallery__slide-image {
   width: 100%;
-  object-fit: cover;
-  user-select: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .photo-gallery {
@@ -1175,10 +1180,11 @@ html {
 
 .photo-gallery__photo {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.contacts {
+.footer {
   padding: 50px 30px 50px;
   display: flex;
   flex-direction: column;
@@ -1186,7 +1192,7 @@ html {
   position: relative;
 }
 
-.contacts__title {
+.footer__title {
   margin: 0;
   font-family: "Roboto", Tahoma, sans-serif;
   font-weight: 600;
@@ -1196,18 +1202,18 @@ html {
 }
 
 @media all and (max-width: 1200px) {
-  .contacts__title {
+  .footer__title {
     font-size: 28px;
   }
 }
 
 @media all and (max-width: 740px) {
-  .contacts__title {
+  .footer__title {
     font-size: 24px;
   }
 }
 
-.contacts__title-description {
+.footer__title-description {
   margin: 20px 0 0;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
@@ -1218,18 +1224,18 @@ html {
 }
 
 @media all and (max-width: 1200px) {
-  .contacts__title-description {
+  .footer__title-description {
     font-size: 18px;
   }
 }
 
 @media all and (max-width: 740px) {
-  .contacts__title-description {
+  .footer__title-description {
     font-size: 16px;
   }
 }
 
-.contacts__wrapper {
+.footer__wrapper {
   margin: 65px 0 0;
   display: flex;
   gap: 130px;
@@ -1237,23 +1243,23 @@ html {
 }
 
 @media all and (max-width: 780px) {
-  .contacts__wrapper {
+  .footer__wrapper {
     gap: 60px;
   }
 }
 
 @media all and (max-width: 610px) {
-  .contacts__wrapper {
+  .footer__wrapper {
     flex-direction: column;
   }
 }
 
-.contacts__address-column {
+.footer__address-column {
   display: flex;
   flex-direction: column;
 }
 
-.contacts__item-large {
+.footer__item-large {
   margin: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
@@ -1263,18 +1269,18 @@ html {
 }
 
 @media all and (max-width: 1200px) {
-  .contacts__item-large {
+  .footer__item-large {
     font-size: 24px;
   }
 }
 
 @media all and (max-width: 740px) {
-  .contacts__item-large {
+  .footer__item-large {
     font-size: 22px;
   }
 }
 
-.contacts__item-small {
+.footer__item-small {
   margin: 40px 0 0;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
@@ -1283,52 +1289,54 @@ html {
   font-size: 16px;
 }
 
-.contacts__social {
+.footer__social {
   margin: 10px 0 0;
   list-style: none;
   padding: 0;
   display: flex;
 }
 
-.contacts__social-icon {
+.footer__social-icon {
   cursor: pointer;
 }
 
-.contacts__social-icon:not(:last-child) {
+.footer__social-icon:not(:last-child) {
   margin-right: 5px;
 }
 
-.contacts__social-icon-link {
+.footer__social-icon-link {
   display: block;
   width: 30px;
   height: 30px;
   opacity: 0.5;
 }
 
-.contacts__social-icon-link:hover {
+.footer__social-icon-link:hover {
   opacity: 1;
 }
 
-.contacts__social-icon-link_vk {
+.footer__social-icon-link_vk {
   background: url("../images/vk.svg") no-repeat center;
   background-size: 30px 30px;
 }
 
-.contacts__social-icon-link_ig {
+.footer__social-icon-link_ig {
   background: url("../images/ig.svg") no-repeat center;
   background-size: 30px 30px;
 }
 
-.contacts__form-column {
+.footer__form-column {
   display: flex;
   flex-direction: column;
 }
 
-.contacts__form-input-text {
+.footer__form-input-text {
   margin-bottom: 25px;
   border: 1px solid #c7c7c7;
   background-color: transparent;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   height: 60px;
   padding: 0 20px;
   font-size: 16px;
@@ -1339,7 +1347,39 @@ html {
   border-radius: 0;
 }
 
-.contacts__form-input-text::placeholder {
+.footer__form-input-text::-webkit-input-placeholder {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+  line-height: 1.45;
+  font-size: 16px;
+}
+
+.footer__form-input-text::-moz-placeholder {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+  line-height: 1.45;
+  font-size: 16px;
+}
+
+.footer__form-input-text:-ms-input-placeholder {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+  line-height: 1.45;
+  font-size: 16px;
+}
+
+.footer__form-input-text::-ms-input-placeholder {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+  line-height: 1.45;
+  font-size: 16px;
+}
+
+.footer__form-input-text::placeholder {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
   color: #000;
@@ -1348,23 +1388,49 @@ html {
 }
 
 @media all and (max-width: 1200px) {
-  .contacts__form-input-text::placeholder {
+  .footer__form-input-text::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .footer__form-input-text::-moz-placeholder {
+    font-size: 14px;
+  }
+  .footer__form-input-text:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .footer__form-input-text::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .footer__form-input-text::placeholder {
     font-size: 14px;
   }
 }
 
 @media all and (max-width: 740px) {
-  .contacts__form-input-text::placeholder {
+  .footer__form-input-text::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .footer__form-input-text::-moz-placeholder {
+    font-size: 12px;
+  }
+  .footer__form-input-text:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .footer__form-input-text::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .footer__form-input-text::placeholder {
     font-size: 12px;
   }
 }
 
-.contacts__form-textarea {
+.footer__form-textarea {
   border: 1px solid #c7c7c7;
   height: 100px;
   resize: vertical;
   background-color: transparent;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   margin: 0;
   padding: 20px 20px;
   font-size: 16px;
@@ -1374,7 +1440,39 @@ html {
   border-radius: 0;
 }
 
-.contacts__form-textarea::placeholder {
+.footer__form-textarea::-webkit-input-placeholder {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+  line-height: 1.45;
+  font-size: 16px;
+}
+
+.footer__form-textarea::-moz-placeholder {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+  line-height: 1.45;
+  font-size: 16px;
+}
+
+.footer__form-textarea:-ms-input-placeholder {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+  line-height: 1.45;
+  font-size: 16px;
+}
+
+.footer__form-textarea::-ms-input-placeholder {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+  line-height: 1.45;
+  font-size: 16px;
+}
+
+.footer__form-textarea::placeholder {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
   color: #000;
@@ -1383,18 +1481,42 @@ html {
 }
 
 @media all and (max-width: 1200px) {
-  .contacts__form-textarea::placeholder {
+  .footer__form-textarea::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .footer__form-textarea::-moz-placeholder {
+    font-size: 14px;
+  }
+  .footer__form-textarea:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .footer__form-textarea::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .footer__form-textarea::placeholder {
     font-size: 14px;
   }
 }
 
 @media all and (max-width: 740px) {
-  .contacts__form-textarea::placeholder {
+  .footer__form-textarea::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .footer__form-textarea::-moz-placeholder {
+    font-size: 12px;
+  }
+  .footer__form-textarea:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .footer__form-textarea::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .footer__form-textarea::placeholder {
     font-size: 12px;
   }
 }
 
-.contacts__form-submit {
+.footer__form-submit {
   width: 100%;
   height: 35px;
   margin: 20px 0 0;
@@ -1409,18 +1531,45 @@ html {
   cursor: pointer;
 }
 
-.contacts__form-submit:hover {
+.footer__form-submit:hover {
   background-color: #c5c5c5;
 }
 
 @media all and (max-width: 1200px) {
-  .contacts__form-submit {
+  .footer__form-submit {
     font-size: 14px;
   }
 }
 
 @media all and (max-width: 740px) {
-  .contacts__form-submit {
+  .footer__form-submit {
     font-size: 12px;
   }
+}
+
+.text__button {
+  margin: 20px 0 0;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px 30px 15px 30px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  min-width: 156px;
+}
+
+@media all and (max-width: 1200px) {
+  .text__button {
+    font-size: 12px;
+  }
+}
+
+.text__button:hover {
+  -webkit-filter: opacity(0.7);
+  filter: opacity(0.7);
 }
