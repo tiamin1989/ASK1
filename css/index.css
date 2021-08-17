@@ -1232,8 +1232,14 @@ html {
 .contacts__wrapper {
   margin: 65px 0 0;
   display: flex;
-  gap: 30px;
+  gap: 130px;
   max-width: 1200px;
+}
+
+@media all and (max-width: 780px) {
+  .contacts__wrapper {
+    gap: 60px;
+  }
 }
 
 @media all and (max-width: 610px) {
