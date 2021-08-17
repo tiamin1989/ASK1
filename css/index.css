@@ -1546,30 +1546,3 @@ html {
     font-size: 12px;
   }
 }
-
-.text__button {
-  margin: 20px 0 0;
-  font-family: "Roboto", Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  color: #fff;
-  background-color: #000;
-  border: 0;
-  border-radius: 10px;
-  padding: 15px 30px 15px 30px;
-  transition: all 0.3s ease-out;
-  cursor: pointer;
-  min-width: 156px;
-}
-
-@media all and (max-width: 1200px) {
-  .text__button {
-    font-size: 12px;
-  }
-}
-
-.text__button:hover {
-  -webkit-filter: opacity(0.7);
-  filter: opacity(0.7);
-}
