@@ -46,12 +46,21 @@ export function loadPopupGallery(images, index) {
 
     if (index === i) li.classList.add("active");
 
+    const figure = document.createElement("figure");
+    figure.classList.add("popup-gallery__slide-figure");
+
     const img = document.createElement("img");
     img.src = image.getAttribute("data-full-image");
     img.alt = image.getAttribute("alt");
     img.classList.add("popup-gallery__slide-image");
+    const figcaption = document.createElement("figcaption");
+    figcaption.textContent = image.getAttribute("data-caption");
+    figcaption.classList.add("popup-gallery__caption");
 
-    li.append(img);
+    figure.append(img);
+    figure.append(figcaption);
+
+    li.append(figure);
     gallery.append(li);
   });
   popup.classList.add("active");
