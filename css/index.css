@@ -2111,3 +2111,25 @@ html {
   font-weight: 400;
   font-size: 24px;
 }
+
+.timeline__title {
+  flex-basis: 100%;
+  margin: 50px 0 30px;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+}
+
+@media all and (max-width: 1200px) {
+  .timeline__title {
+    font-size: 28px;
+  }
+}
+
+@media all and (max-width: 740px) {
+  .timeline__title {
+    font-size: 24px;
+  }
+}
