@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <script src="./js/split-image-gallery.js"></script>
   </head>
   <body class="body">
     <header class="header">
@@ -21,13 +22,9 @@
             <img src="./images/logo.png" alt="ASK1" class="header__logo" />
 
             <div class="header__text-logo-wrapper">
-              <img
-                src="./images/logo-text.png"
-                alt="АСК1"
-                class="header__text-logo"
-              />
+              <span class="header__text-logo">АСК1</span>
               <span class="header__text-logo-description"
-                >Архитектурно-Строительная Компания</span
+                >Архитектурно-Строительная Компания 1</span
               >
             </div>
           </div>
@@ -67,7 +64,7 @@
               />
               <div class="header__contacts-text">
                 <span class="header__contacts-text-item"
-                  >г. Стерлитамак, Ленина, 55</span
+                  >г. Стерлитамак,<br />Стерлибашевский тракт, 2/1</span
                 >
                 <span class="header__contacts-text-item"
                   >Пн-Пт 10:00-18:00</span
@@ -134,7 +131,7 @@
 
       <section class="photo-slider">
         <a name="photo-slider" class="anchor"></a>
-        <h2 class="photo-slider__title">Реализованные проекты</h2>
+        <h2 class="photo-slider__title">Мы проектируем</h2>
         <div class="photo-slider__wrapper">
           <div class="photo-slider__knockout">
             <div class="photo-slider__to-left"></div>
@@ -366,6 +363,13 @@
           мелочей.
         </p>
         <p class="text__paragraph">
+          Визуальная составляющая реализуемого проекта важна на любой стадии
+          строительства. Она помогает сформировать образ позволяющий клиенту
+          погрузиться в атмосферу уже построенного объекта. Зачастую заказчик не
+          обладает простаранственным мышлением архитектора, позволяющему по
+          планировкам оценить общую картину.
+        </p>
+        <p class="text__paragraph">
           Забудьте о перерасходе материалов, непредсказуемых затратах и
           трудностях при ремонте через несколько лет. Мы учтем Ваши личные
           пожелания и особенности участка, выполнив работу в соответствии всем
@@ -374,16 +378,21 @@
         <p class="text__paragraph">
           Возможно также и удаленное проектирование, если Вы, к примеру,
           находитесь в другом регионе. Узнайте стоимость Вашего проекта и
-          задайте интересующие вопросы, отправив запрос на электронную почту
+          задайте интересующие вопросы, отправив запрос на электронную почту,
+          либо через WhatsApp:
+        </p>
+        <div class="contacts-block">
           <a
-            class="header__contacts-text-item-link"
+            class="contacts-block__item contacts-block__item_mail"
             href="mailto:a1master02@mail.ru"
             >a1master02@mail.ru</a
-          >, либо через WhatsApp
-          <a class="header__contacts-text-item-link" href="tel:+79373220900"
+          >
+          <a
+            class="contacts-block__item contacts-block__item_phone"
+            href="tel:+79373220900"
             >+7 (937) 322-09-00</a
-          >.
-        </p>
+          >
+        </div>
       </section>
 
       <section class="directions">
@@ -471,16 +480,98 @@
         <p class="text__paragraph">
           От Вас требуются обмеры фасадов, фотографии фасадов, и мы готовы
           приступать! Узнайте стоимость Вашего проекта и задайте интересующие
-          вопросы, отправив запрос на электронную почту
+          вопросы, отправив запрос на электронную почту, либо через WhatsApp
+          ниже, Мы ждем именно Вас!
+        </p>
+        <div class="contacts-block">
           <a
-            class="header__contacts-text-item-link"
+            class="contacts-block__item contacts-block__item_mail"
             href="mailto:a1master02@mail.ru"
             >a1master02@mail.ru</a
-          >, либо через WhatsApp
-          <a class="header__contacts-text-item-link" href="tel:+79373220900"
+          >
+          <a
+            class="contacts-block__item contacts-block__item_phone"
+            href="tel:+79373220900"
             >+7 (937) 322-09-00</a
-          >. Мы ждем именно Вас!
-        </p>
+          >
+        </div>
+      </section>
+
+      <section class="split-image-wrapper">
+        <ul class="split-image-list">
+          <li class="split-image-item active">
+            <div class="split-image">
+              <figure class="split-image-figure split-image-figure_one">
+                <div class="split-image-compare split-image-compare_one"></div>
+              </figure>
+              <input
+                oninput="beforeAfter()"
+                onchange="beforeAfter()"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="split-image-slider"
+              />
+            </div>
+          </li>
+          <li class="split-image-item">
+            <div class="split-image">
+              <figure class="split-image-figure split-image-figure_two">
+                <div class="split-image-compare split-image-compare_two"></div>
+              </figure>
+              <input
+                oninput="beforeAfter()"
+                onchange="beforeAfter()"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="split-image-slider"
+              />
+            </div>
+          </li>
+          <li class="split-image-item">
+            <div class="split-image">
+              <figure class="split-image-figure split-image-figure_three">
+                <div
+                  class="split-image-compare split-image-compare_three"
+                ></div>
+              </figure>
+              <input
+                oninput="beforeAfter()"
+                onchange="beforeAfter()"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="split-image-slider"
+              />
+            </div>
+          </li>
+          <li class="split-image-item">
+            <div class="split-image">
+              <figure class="split-image-figure split-image-figure_four">
+                <div class="split-image-compare split-image-compare_four"></div>
+              </figure>
+              <input
+                oninput="beforeAfter()"
+                onchange="beforeAfter()"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="split-image-slider"
+              />
+            </div>
+          </li>
+        </ul>
+        <div class="split-image__bullets">
+          <span class="split-image__bullet active">&bull;</span>
+          <span class="split-image__bullet">&bull;</span>
+          <span class="split-image__bullet">&bull;</span>
+          <span class="split-image__bullet">&bull;</span>
+        </div>
       </section>
 
       <section class="prices">
@@ -488,7 +579,7 @@
         <div class="prices__wrapper">
           <div class="prices__column">
             <article class="prices__item">
-              <div class="prices__item-wrapper">
+              <div class="prices__item-wrapper prices__item-wrapper_green">
                 <h3 class="prices__item-title">Архитектурный проект</h3>
                 <span class="prices__item-price">350&#8381; (м²)</span>
               </div>
@@ -515,7 +606,7 @@
             </article>
 
             <article class="prices__item">
-              <div class="prices__item-wrapper">
+              <div class="prices__item-wrapper prices__item-wrapper_red">
                 <h3 class="prices__item-title">Эскизный проект</h3>
                 <span class="prices__item-price">250&#8381; (м²)</span>
               </div>
@@ -537,7 +628,7 @@
             </article>
 
             <article class="prices__item">
-              <div class="prices__item-wrapper">
+              <div class="prices__item-wrapper prices__item-wrapper_blue">
                 <h3 class="prices__item-title">Редизайн фасада</h3>
                 <span class="prices__item-price">по договоренности</span>
               </div>
@@ -553,7 +644,7 @@
 
           <div class="prices__column">
             <article class="prices__item">
-              <div class="prices__item-wrapper">
+              <div class="prices__item-wrapper prices__item-wrapper_yellow">
                 <h3 class="prices__item-title">Дизайн интерьера</h3>
                 <span class="prices__item-price">1500&#8381; (м²)</span>
               </div>
@@ -728,6 +819,69 @@
           </li>
         </ul>
       </section>
+
+      <section class="timeline">
+        <ul class="timeline__wrapper">
+          <li class="timeline__item timeline__item_bottom">
+            <h3 class="timeline__item-title">Звонок в ASK1</h3>
+            <p class="timeline__item-description">
+              Задайте вопросы нашим специалистам
+            </p>
+            <span class="timeline__step">01</span>
+          </li>
+          <li class="timeline__item timeline__item_top">
+            <h3 class="timeline__item-title">
+              Предварительный расчет стоимости
+            </h3>
+            <p class="timeline__item-description">
+              Консультация с архитектором
+            </p>
+            <span class="timeline__step">02</span>
+          </li>
+          <li class="timeline__item timeline__item_bottom">
+            <h3 class="timeline__item-title">Встреча онлайн или в офисе</h3>
+            <p class="timeline__item-description">
+              Составление и утверждение ТЗ, в котором заказчик подробно
+              описывает свои пожелания
+            </p>
+            <span class="timeline__step">03</span>
+          </li>
+          <li class="timeline__item timeline__item_top">
+            <h3 class="timeline__item-title">
+              Заключение договора и оплата 60% аванс
+            </h3>
+            <p class="timeline__item-description">
+              Заключение договора и выполнение индивидуального проектирования,
+              предоплата
+            </p>
+            <span class="timeline__step">04</span>
+          </li>
+          <li class="timeline__item timeline__item_bottom">
+            <h3 class="timeline__item-title">
+              Согласование планировочных решений
+            </h3>
+            <p class="timeline__item-description">
+              Создание эскизного проекта с 3D-моделью, выбор архитектурных
+              стилистических объемно-планировочных решений, составление планов
+              этажей
+            </p>
+            <span class="timeline__step">05</span>
+          </li>
+          <li class="timeline__item timeline__item_top">
+            <h3 class="timeline__item-title">
+              Итоговый расчет и получение готового проекта&#42;
+            </h3>
+            <p class="timeline__item-description"></p>
+            <span class="timeline__step">06</span>
+          </li>
+        </ul>
+        <div class="timeline__footer">
+          <p class="timeline__footer-clarification">
+            &#42; Точный срок создания проекта закрепляется в договоре и
+            составляет, как правило, от 14 до 45 дней, в зависимости от сложности.
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -740,7 +894,10 @@
         <div class="footer__address-column">
           <span class="footer__item-large">+7 (937) 322-09-00</span>
           <span class="footer__item-large">a1master02@mail.ru</span>
-          <span class="footer__item-small">г. Стерлитамак, Ленина, 55</span>
+          <span class="footer__item-small"
+            >г. Стерлитамак, Стерлибашевский тракт, 2/1<br />
+            ТЦ МАЯК секция 206</span
+          >
           <ul class="footer__social">
             <li class="footer__social-icon">
               <a

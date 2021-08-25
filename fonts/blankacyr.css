@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "BlankaCYR";
+  font-style: normal;
+  font-weight: 400;
+  src: local("BlankaCYR"), local("BlankaCYR"),
+    url("./blankacyr/BlankaCYR.otf") format("opentype");
+}
