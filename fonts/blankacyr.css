@@ -3,5 +3,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("BlankaCYR"), local("BlankaCYR"),
-    url("./blankacyr/BlankaCYR.otf") format("opentype");
+    url("./blankacyr/BlankaCYR.otf") format("opentype"),
+    url('./blankacyr/BlankaCYR.woff2') format('woff2'),
+    url('./blankacyr/BlankaCYR.ttf') format('truetype');
 }
