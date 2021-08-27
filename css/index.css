@@ -1749,7 +1749,7 @@ html {
   .split-image__container {
     border: 0;
     overflow: unset;
-    margin: 30px auto;
+    margin: 30px auto 0;
   }
 }
 
@@ -1776,6 +1776,10 @@ html {
 
 .split-image__figure.split-image__figure_four {
   background-image: url("../images/split-image/4-1.jpeg");
+}
+
+.split-image__figure.split-image__figure_five {
+  background-image: url("../images/split-image/5-1.jpeg");
 }
 
 .split-image__compare {
@@ -1820,6 +1824,10 @@ html {
 
 .split-image__compare.split-image__compare_four {
   background-image: url("../images/split-image/4-2.jpeg");
+}
+
+.split-image__compare.split-image__compare_five {
+  background-image: url("../images/split-image/5-2.jpeg");
 }
 
 .split-image__item.active {
