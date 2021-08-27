@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Создайте себе надежный и комфортный дом с 
+архитекторами компании АСК1"
+    />
     <title>АСК1 - Архитектурно-Строительная Компания 1</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/index.css" />
@@ -101,7 +106,7 @@
         </nav>
       </div>
     </header>
-    <a name="main" class="anchor"></a>
+    <span id="main" class="anchor"></span>
     <main class="main">
       <section class="cover">
         <div class="cover__wrapper">
@@ -130,7 +135,7 @@
       </section>
 
       <section class="photo-slider">
-        <a name="photo-slider" class="anchor"></a>
+        <a id="photo-slider" class="anchor"></a>
         <h2 class="photo-slider__title">Мы проектируем</h2>
         <div class="photo-slider__wrapper">
           <div class="photo-slider__knockout">
@@ -457,7 +462,7 @@
       </section>
 
       <section class="text text_discount">
-        <a name="prices-menu" class="anchor"></a>
+        <a id="prices-menu" class="anchor"></a>
         <h2 class="text__title">
           <span class="text__title-zoom-in">10%</span> скидка на удаленное
           проектирование отделки фасада
@@ -497,45 +502,14 @@
         </div>
       </section>
 
-      <section class="split-image-wrapper">
-        <ul class="split-image-list">
-          <li class="split-image-item active">
-            <div class="split-image">
-              <figure class="split-image-figure split-image-figure_one">
-                <div class="split-image-compare split-image-compare_one"></div>
-              </figure>
-              <input
-                oninput="beforeAfter()"
-                onchange="beforeAfter()"
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                class="split-image-slider"
-              />
-            </div>
-          </li>
-          <li class="split-image-item">
-            <div class="split-image">
-              <figure class="split-image-figure split-image-figure_two">
-                <div class="split-image-compare split-image-compare_two"></div>
-              </figure>
-              <input
-                oninput="beforeAfter()"
-                onchange="beforeAfter()"
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                class="split-image-slider"
-              />
-            </div>
-          </li>
-          <li class="split-image-item">
-            <div class="split-image">
-              <figure class="split-image-figure split-image-figure_three">
+      <section class="split-image">
+        <h2 class="split-image__title">Проект - Реализация</h2>
+        <ul class="split-image__list">
+          <li class="split-image__item active">
+            <div class="split-image__container">
+              <figure class="split-image__figure split-image__figure_one">
                 <div
-                  class="split-image-compare split-image-compare_three"
+                  class="split-image__compare split-image__compare_one"
                 ></div>
               </figure>
               <input
@@ -549,10 +523,48 @@
               />
             </div>
           </li>
-          <li class="split-image-item">
-            <div class="split-image">
-              <figure class="split-image-figure split-image-figure_four">
-                <div class="split-image-compare split-image-compare_four"></div>
+          <li class="split-image__item">
+            <div class="split-image__container">
+              <figure class="split-image__figure split-image__figure_two">
+                <div
+                  class="split-image__compare split-image__compare_two"
+                ></div>
+              </figure>
+              <input
+                oninput="beforeAfter()"
+                onchange="beforeAfter()"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="split-image-slider"
+              />
+            </div>
+          </li>
+          <li class="split-image__item">
+            <div class="split-image__container">
+              <figure class="split-image__figure split-image__figure_three">
+                <div
+                  class="split-image__compare split-image__compare_three"
+                ></div>
+              </figure>
+              <input
+                oninput="beforeAfter()"
+                onchange="beforeAfter()"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="split-image-slider"
+              />
+            </div>
+          </li>
+          <li class="split-image__item">
+            <div class="split-image__container">
+              <figure class="split-image__figure split-image__figure_four">
+                <div
+                  class="split-image__compare split-image__compare_four"
+                ></div>
               </figure>
               <input
                 oninput="beforeAfter()"
@@ -699,7 +711,7 @@
       </section>
 
       <section class="photo-gallery">
-        <a name="our-work" class="anchor"></a>
+        <a id="our-work" class="anchor"></a>
         <h2 class="photo-gallery__title">Наши работы</h2>
         <p class="photo-gallery__description">дизайн интерьера</p>
         <ul class="photo-gallery__photos">
@@ -879,14 +891,15 @@
         <div class="timeline__footer">
           <p class="timeline__footer-clarification">
             &#42; Точный срок создания проекта закрепляется в договоре и
-            составляет, как правило, от 14 до 45 дней, в зависимости от сложности.
+            составляет, как правило, от 14 до 45 дней, в зависимости от
+            сложности.
           </p>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <a name="contacts" class="anchor"></a>
+      <a id="contacts" class="anchor"></a>
       <h2 class="footer__title">Обратная связь</h2>
       <p class="footer__title-description">
         Оставьте свой вопрос и мы свяжемся с Вами
@@ -902,14 +915,12 @@
           <ul class="footer__social">
             <li class="footer__social-icon">
               <a
-                target="__blank"
                 href="https://vk.com"
                 class="footer__social-icon-link footer__social-icon-link_vk"
               ></a>
             </li>
             <li class="footer__social-icon">
               <a
-                target="__blank"
                 href="https://instagram.com"
                 class="footer__social-icon-link footer__social-icon-link_ig"
               ></a>
@@ -920,26 +931,28 @@
           <input
             class="footer__form-input-text"
             type="text"
-            name=""
-            id=""
+            id="mail"
             placeholder="Ваша эл. почта"
           />
           <input
             class="footer__form-input-text"
             type="text"
-            name=""
-            id=""
+            id="name"
             placeholder="Ваше имя"
           />
           <textarea
             class="footer__form-textarea"
-            name=""
-            id=""
+            id="messsage"
             cols="30"
             rows="10"
             placeholder="Ваше сообщение"
           ></textarea>
-          <input type="button" class="footer__form-submit" value="Отправить" />
+          <input
+            type="button"
+            id="submit"
+            class="footer__form-submit"
+            value="Отправить"
+          />
         </form>
       </div>
     </footer>
