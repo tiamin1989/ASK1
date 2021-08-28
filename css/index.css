@@ -20,6 +20,7 @@ html {
   display: flex;
   flex-direction: column;
   margin: 0 auto 0;
+  position: relative;
 }
 
 .header {
@@ -442,7 +443,6 @@ html {
 
 .photo-slider__wrapper {
   position: relative;
-
   height: 450px;
 }
 
@@ -532,6 +532,7 @@ html {
   display: flex;
   gap: 100px;
   transition: all ease-in-out 0.3s;
+  -webkit-overflow-scrolling:touch;
 }
 
 .photo-slider__slide {
@@ -2167,4 +2168,127 @@ html {
   .timeline__title {
     font-size: 24px;
   }
+}
+
+.popup-backcall {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  background-color: rgba(243, 243, 243, 0.9);
+  display: none;
+}
+
+.popup-backcall.active {
+  display: block;
+}
+
+.popup-backcall__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #EFEFEF;
+  padding: 20px;
+  border: 2px solid rgb(161, 161, 161);
+  border-radius: 5px;
+  max-width: 570px;
+  width: 70vw;
+}
+
+@media all and (max-width: 610px) {
+  .popup-backcall__wrapper {
+    width: calc(100% - 35px);
+  }
+}
+
+.popup-backcall__form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.popup-backcall__form-input-text {
+  border: 0;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.popup-backcall__form-input-text:focus {
+  outline: 1px rgb(117, 117, 247) solid;
+}
+
+.popup-backcall__form-textarea {
+  border: 0;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.popup-backcall__form-textarea:focus {
+  outline: 1px rgb(117, 117, 247) solid;
+}
+
+.popup-backcall__close {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+  right: -60px;
+  top: -65px;
+  background-color: rgb(230 230 230 / 30%);
+  background-image: url("../images/popup-close.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@media all and (max-width: 800px) {
+  .popup-backcall__close {
+    right: 18px;
+    width: 40px;
+    height: 40px;
+    background-size: 15px;
+  }
+}
+
+.popup-backcall__close:hover {
+  background-color: rgb(230 230 230 / 100%);
+}
+
+.popup-backcall__form-submit {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 0;
+  color: #000;
+  background-color: coral;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.popup-backcall__form-submit:hover {
+  background-color: rgb(255, 150, 112);
+}
+
+.backcall-messsage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.backcall-messsage::after {
+  content: "\2713\0020Сообщение успешно отправлено!";
 }

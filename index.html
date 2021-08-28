@@ -946,18 +946,20 @@
             </li>
           </ul>
         </div>
-        <form class="footer__form-column">
+        <form class="footer__form-column" id="footer__form">
           <input
             class="footer__form-input-text"
-            type="text"
+            type="email"
             id="mail"
             placeholder="Ваша эл. почта"
+            required
           />
           <input
             class="footer__form-input-text"
             type="text"
             id="name"
             placeholder="Ваше имя"
+            required
           />
           <textarea
             class="footer__form-textarea"
@@ -965,12 +967,14 @@
             cols="30"
             rows="10"
             placeholder="Ваше сообщение"
+            required
           ></textarea>
           <input
-            type="button"
+            type="submit"
             id="submit"
             class="footer__form-submit"
             value="Отправить"
+            form="footer__form"
           />
         </form>
       </div>
@@ -985,6 +989,44 @@
       </div>
     </div>
 
+    <div class="popup-backcall">
+      <div class="popup-backcall__wrapper">
+        <span class="popup-backcall__close"></span>
+        <form class="popup-backcall__form-column" id="popup-backcall-form">
+          <input
+            class="popup-backcall__form-input-text"
+            type="email"
+            id="backcall-mail"
+            placeholder="Ваша эл. почта"
+            required
+          />
+          <input
+            class="popup-backcall__form-input-text"
+            type="text"
+            id="backcall-name"
+            placeholder="Ваше имя"
+            required
+          />
+          <textarea
+            class="popup-backcall__form-textarea"
+            id="backcall-messsage"
+            cols="30"
+            rows="10"
+            placeholder="Ваше сообщение"
+            required
+          ></textarea>
+          <input
+            type="submit"
+            id="backcall-submit"
+            class="popup-backcall__form-submit"
+            value="Отправить"
+            form="popup-backcall-form"
+          />
+        </form>
+        <div class="backcall-messsage"></div>
+      </div>
+    </div>
+    <script type="module" src="./js/popup-backcall.js"></script>
     <script type="module" src="./js/index.js"></script>
     <script type="module" src="./js/photo-slider.js"></script>
     <script type="module" src="./js/photo-gallery.js"></script>
