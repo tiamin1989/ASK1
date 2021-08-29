@@ -995,26 +995,19 @@
         <form class="popup-backcall__form-column" id="popup-backcall-form">
           <input
             class="popup-backcall__form-input-text"
-            type="email"
-            id="backcall-mail"
-            placeholder="Ваша эл. почта"
-            required
-          />
-          <input
-            class="popup-backcall__form-input-text"
             type="text"
             id="backcall-name"
             placeholder="Ваше имя"
             required
           />
-          <textarea
-            class="popup-backcall__form-textarea"
-            id="backcall-messsage"
-            cols="30"
-            rows="10"
-            placeholder="Ваше сообщение"
+          <input
+            class="popup-backcall__form-input-text"
+            type="tel"
+            id="backcall-mail"
+            placeholder="Ваш моб. номер"
+            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
             required
-          ></textarea>
+          />
           <input
             type="submit"
             id="backcall-submit"
@@ -1023,7 +1016,14 @@
             form="popup-backcall-form"
           />
         </form>
-        <div class="backcall-messsage"></div>
+        <div class="backcall-messsage">
+          <span class="backcall-messsage__icon backcall-messsage__icon_success"></span>
+          <span class="backcall-message__message">Обратный звонок заказан!</span>
+        </div>
+        <div class="backcall-messsage">
+          <span class="backcall-messsage__icon backcall-messsage__icon_fail"></span>
+          <span class="backcall-message__message">Произошла ошибка! Попробуйте обновить страницу.</span>
+        </div>
       </div>
     </div>
     <script type="module" src="./js/popup-backcall.js"></script>

@@ -2190,11 +2190,11 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #EFEFEF;
   padding: 20px;
-  border: 2px solid rgb(161, 161, 161);
+  background-color: #fff;
+  border: 1px solid #dadada;
   border-radius: 5px;
-  max-width: 570px;
+  max-width: 480px;
   width: 70vw;
 }
 
@@ -2212,15 +2212,12 @@ html {
 
 .popup-backcall__form-input-text {
   border: 0;
-  background-color: #fff;
+  background-color: #EFEFEF;
+  outline: none;
   padding: 15px 20px;
   border-radius: 5px;
   font-family: "Roboto", Tahoma, sans-serif;
   font-size: 14px;
-}
-
-.popup-backcall__form-input-text:focus {
-  outline: 1px rgb(117, 117, 247) solid;
 }
 
 .popup-backcall__form-textarea {
@@ -2245,7 +2242,7 @@ html {
   z-index: 1;
   right: -60px;
   top: -65px;
-  background-color: rgb(230 230 230 / 30%);
+  background-color: rgb(255 255 255 / 80%);
   background-image: url("../images/popup-close.svg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -2270,8 +2267,8 @@ html {
   cursor: pointer;
   border-radius: 3px;
   border: 0;
-  color: #000;
-  background-color: coral;
+  color: #fff;
+  background-color: #ffcbb8;
   font-family: "Roboto", Tahoma, sans-serif;
   font-size: 14px;
 }
@@ -2289,6 +2286,22 @@ html {
   padding: 20px;
 }
 
-.backcall-messsage::after {
-  content: "\2713\0020Сообщение успешно отправлено!";
+.backcall-messsage__icon {
+  margin: 0 10px 5px 0;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: cover;
+}
+
+.backcall-messsage__icon.backcall-messsage__icon_success {
+  background: url("../images/success.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.backcall-messsage__icon.backcall-messsage__icon_fail {
+  background: url("../images/fail.png") no-repeat;
+  background-position: center;
+  background-size: contain;
 }
