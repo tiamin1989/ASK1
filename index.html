@@ -106,7 +106,7 @@
         </nav>
       </div>
     </header>
-    <span id="main" class="anchor"></span>
+    <span id="main" class="anchor" data-id="0"></span>
     <main class="main">
       <section class="cover">
         <div class="cover__wrapper">
@@ -135,7 +135,7 @@
       </section>
 
       <section class="photo-slider">
-        <a id="photo-slider" class="anchor"></a>
+        <span id="photo-slider" class="anchor" data-id="1"></span>
         <h2 class="photo-slider__title">Мы проектируем</h2>
         <div class="photo-slider__wrapper">
           <div class="photo-slider__knockout">
@@ -360,6 +360,7 @@
       </section>
 
       <section class="text text_question">
+        <span id="text1" class="anchor" data-id="2"></span>
         <h2 class="text__title">Зачем нужен архитектурный проект?</h2>
         <p class="text__paragraph">
           Если Вы планируете строительство дома и не знаете с чего начать, то
@@ -401,6 +402,7 @@
       </section>
 
       <section class="directions">
+        <span id="directions" class="anchor" data-id="3"></span>
         <h2 class="directions__title">Проектируемые направления</h2>
         <ul class="directions__list">
           <li class="directions__list-item">
@@ -462,7 +464,7 @@
       </section>
 
       <section class="text text_discount">
-        <a id="prices-menu" class="anchor"></a>
+        <span id="prices-menu" class="anchor" data-id="4"></span>
         <h2 class="text__title">
           <span class="text__title-zoom-in">10%</span> скидка на удаленное
           проектирование отделки фасада
@@ -503,6 +505,7 @@
       </section>
 
       <section class="split-image">
+        <span id="split-image" class="anchor" data-id="5"></span>
         <h2 class="split-image__title">Проект - Реализация</h2>
         <ul class="split-image__list">
           <li class="split-image__item active">
@@ -606,6 +609,7 @@
       </section>
 
       <section class="prices">
+        <span id="prices" class="anchor" data-id="6"></span>
         <h2 class="prices__title">Составы проектов и цены</h2>
         <div class="prices__wrapper">
           <div class="prices__column">
@@ -730,7 +734,7 @@
       </section>
 
       <section class="photo-gallery">
-        <a id="our-work" class="anchor"></a>
+        <span id="our-work" class="anchor" data-id="7"></span>
         <h2 class="photo-gallery__title">Наши работы</h2>
         <p class="photo-gallery__description">дизайн интерьера</p>
         <ul class="photo-gallery__photos">
@@ -852,6 +856,7 @@
       </section>
 
       <section class="timeline">
+        <span id="timeline" class="anchor" data-id="8"></span>
         <h2 class="timeline__title">Этапы развития проекта</h2>
         <ul class="timeline__wrapper">
           <li class="timeline__item timeline__item_bottom">
@@ -918,7 +923,7 @@
     </main>
 
     <footer class="footer">
-      <a id="contacts" class="anchor"></a>
+      <span id="contacts" class="anchor" data-id="9"></span>
       <h2 class="footer__title">Обратная связь</h2>
       <p class="footer__title-description">
         Оставьте свой вопрос и мы свяжемся с Вами
@@ -1026,10 +1031,20 @@
         </div>
       </div>
     </div>
+
+    <div class="up">
+      <div class="up__text">
+        <span class="up__text-item">Коснитесь для перехода выше</span>
+        <span class="up__text-item">Коснитесь 2с для перехода вверх</span>
+      </div>
+      <span class="up__up"></span>
+    </div>
+
     <script type="module" src="./js/popup-backcall.js"></script>
     <script type="module" src="./js/index.js"></script>
     <script type="module" src="./js/photo-slider.js"></script>
     <script type="module" src="./js/photo-gallery.js"></script>
     <script type="module" src="./js/popup-gallery.js"></script>
+    <script type="module" src="./js/up.js"></script>
   </body>
 </html>
