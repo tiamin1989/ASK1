@@ -33,12 +33,13 @@ function closeGallery() {
   popup.classList.remove("active");
   currentImages[currentImageIndex].classList.remove("active");
   gallery.replaceChildren();
+  currentImages = [];
   left.removeEventListener("click", toLeft);
   right.removeEventListener("click", toRight);
   close.removeEventListener("click", closeGallery);
 }
 
-export function loadPopupGallery(images, index) {
+export function loadPopupGallery(images, index, evt) {
   changeImageIndex(index);
   images.forEach((image, i) => {
     const li = document.createElement("li");

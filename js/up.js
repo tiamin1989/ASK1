@@ -20,10 +20,6 @@ anchors.forEach((anchor) => {
 
 upButton.addEventListener("click", () => {
   if (index == 0) return;
-  anchors.forEach((e, i, a) => {
-    if (index == i) {
-      a[index - 1].scrollIntoView(true);
-      index--;
-    }
-  });
+  anchors[index - 1].scrollIntoView(true);
+  index--;
 });

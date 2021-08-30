@@ -20,3 +20,50 @@ function stickMenu() {
 window.onscroll = function () {
   stickMenu();
 };
+
+/* Обработка форм */
+const popupForm = document.querySelector("#popup-backcall-form");
+const contactForm = document.querySelector("#footer__form");
+
+/* Обработка формы обратного звонка */
+popupForm.addEventListener("submit", async (evt) => {
+  evt.preventDefault();
+  console.log("test popupForm");
+
+  let response = await fetch("http://xn--1-7sb4a1a.xn--p1ai/backcall.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+    },
+    body: {
+      userName: evt.target.querySelector("#backcall-name").value,
+      phone: evt.target.querySelector("#backcall-phone").value,
+    },
+  });
+
+  let result = await response.json();
+
+  console.log("result", result);
+});
+
+/* Обработка контактной форм */
+contactForm.addEventListener("submit", async (evt) => {
+  evt.preventDefault();
+  console.log("test contactForm");
+
+  let response = await fetch("http://xn--1-7sb4a1a.xn--p1ai/sendmail.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+    },
+    body: {
+      userName: evt.target.querySelector("#name").value,
+      mail: evt.target.querySelector("#mail").value,
+      messsage: evt.target.querySelector("#messsage").value,
+    },
+  });
+
+  let result = await response.json();
+
+  console.log("result", result);
+});

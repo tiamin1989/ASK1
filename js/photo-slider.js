@@ -4,12 +4,15 @@ const gap = 100;
 let currentImageIndex = 0;
 let currentXposition = 0;
 
-const gallery = document.querySelector(".photo-slider__slides");
-const images = document.querySelectorAll(".photo-slider__slide-image");
-const dots = document.querySelectorAll(".photo-slider__bullet");
+const container = document.querySelector("#slider1");
+const dotContainer = document.querySelector("#bullets1");
 
-const leftIcon = document.querySelector(".photo-slider__to-left");
-const rightIcon = document.querySelector(".photo-slider__to-right");
+const gallery = container.querySelector(".photo-slider__slides");
+const images = container.querySelectorAll(".photo-slider__slide-image");
+const dots = dotContainer.querySelectorAll(".photo-slider__bullet");
+
+const leftIcon = container.querySelector(".photo-slider__to-left");
+const rightIcon = container.querySelector(".photo-slider__to-right");
 
 let initialX = null;
 let initialY = null;

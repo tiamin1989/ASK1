@@ -86,7 +86,7 @@
             </li>
             <li class="header__nav-menu-item">
               <a href="#photo-slider" class="header__nav-menu-item-link"
-                >Проекты</a
+                >Портфолио</a
               >
             </li>
             <li class="header__nav-menu-item">
@@ -136,8 +136,8 @@
 
       <section class="photo-slider">
         <span id="photo-slider" class="anchor" data-id="1"></span>
-        <h2 class="photo-slider__title">Мы проектируем</h2>
-        <div class="photo-slider__wrapper">
+        <h2 class="photo-slider__title">Портфолио</h2>
+        <div id="slider1" class="photo-slider__wrapper">
           <div class="photo-slider__knockout">
             <div class="photo-slider__to-left"></div>
             <ul class="photo-slider__slides">
@@ -312,32 +312,12 @@
                   data-caption="test"
                 />
               </li>
-              <li class="photo-slider__slide">
-                <img
-                  src="./images/photo-slider/miniatures/20.jpg"
-                  alt="Реализованный проект"
-                  class="photo-slider__slide-image"
-                  data-full-image="./images/photo-slider/large/20.jpg"
-                  data-caption="test"
-                />
-              </li>
-              <li class="photo-slider__slide">
-                <img
-                  src="./images/photo-slider/miniatures/21.jpg"
-                  alt="Реализованный проект"
-                  class="photo-slider__slide-image"
-                  data-full-image="./images/photo-slider/large/21.jpg"
-                  data-caption="test"
-                />
-              </li>
             </ul>
             <div class="photo-slider__to-right"></div>
           </div>
         </div>
-        <div class="photo-slider__bullets">
+        <div id="bullets1" class="photo-slider__bullets">
           <span class="photo-slider__bullet active">&bull;</span>
-          <span class="photo-slider__bullet">&bull;</span>
-          <span class="photo-slider__bullet">&bull;</span>
           <span class="photo-slider__bullet">&bull;</span>
           <span class="photo-slider__bullet">&bull;</span>
           <span class="photo-slider__bullet">&bull;</span>
@@ -510,45 +490,9 @@
         <ul class="split-image__list">
           <li class="split-image__item active">
             <div class="split-image__container">
-              <figure class="split-image__figure split-image__figure_one">
+              <figure class="split-image__figure split-image__figure_five">
                 <div
-                  class="split-image__compare split-image__compare_one"
-                ></div>
-              </figure>
-              <input
-                oninput="beforeAfter()"
-                onchange="beforeAfter()"
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                class="split-image-slider"
-              />
-            </div>
-          </li>
-          <li class="split-image__item">
-            <div class="split-image__container">
-              <figure class="split-image__figure split-image__figure_two">
-                <div
-                  class="split-image__compare split-image__compare_two"
-                ></div>
-              </figure>
-              <input
-                oninput="beforeAfter()"
-                onchange="beforeAfter()"
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                class="split-image-slider"
-              />
-            </div>
-          </li>
-          <li class="split-image__item">
-            <div class="split-image__container">
-              <figure class="split-image__figure split-image__figure_three">
-                <div
-                  class="split-image__compare split-image__compare_three"
+                  class="split-image__compare split-image__compare_five"
                 ></div>
               </figure>
               <input
@@ -582,9 +526,45 @@
           </li>
           <li class="split-image__item">
             <div class="split-image__container">
-              <figure class="split-image__figure split-image__figure_five">
+              <figure class="split-image__figure split-image__figure_three">
                 <div
-                  class="split-image__compare split-image__compare_five"
+                  class="split-image__compare split-image__compare_three"
+                ></div>
+              </figure>
+              <input
+                oninput="beforeAfter()"
+                onchange="beforeAfter()"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="split-image-slider"
+              />
+            </div>
+          </li>
+          <li class="split-image__item">
+            <div class="split-image__container">
+              <figure class="split-image__figure split-image__figure_two">
+                <div
+                  class="split-image__compare split-image__compare_two"
+                ></div>
+              </figure>
+              <input
+                oninput="beforeAfter()"
+                onchange="beforeAfter()"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="split-image-slider"
+              />
+            </div>
+          </li>
+          <li class="split-image__item">
+            <div class="split-image__container">
+              <figure class="split-image__figure split-image__figure_one">
+                <div
+                  class="split-image__compare split-image__compare_one"
                 ></div>
               </figure>
               <input
@@ -736,46 +716,605 @@
       <section class="photo-gallery">
         <span id="our-work" class="anchor" data-id="7"></span>
         <h2 class="photo-gallery__title">Наши работы</h2>
+
         <p class="photo-gallery__description">дизайн интерьера</p>
-        <ul class="photo-gallery__photos">
-          <li class="photo-gallery__photos-item">
-            <img
-              src="./images/photo-gallery/interior/miniatures/1.jpg"
-              alt="Наша работа"
-              class="photo-gallery__photo"
-              data-full-image="./images/photo-gallery/interior/large/1.jpg"
-              data-caption="test"
-            />
-          </li>
-          <li class="photo-gallery__photos-item">
-            <img
-              src="./images/photo-gallery/interior/miniatures/2.jpg"
-              alt="Наша работа"
-              class="photo-gallery__photo"
-              data-full-image="./images/photo-gallery/interior/large/2.jpg"
-              data-caption="test"
-            />
-          </li>
-          <li class="photo-gallery__photos-item">
-            <img
-              src="./images/photo-gallery/interior/miniatures/3.jpg"
-              alt="Наша работа"
-              class="photo-gallery__photo"
-              data-full-image="./images/photo-gallery/interior/large/3.jpg"
-              data-caption="test"
-            />
-          </li>
-          <li class="photo-gallery__photos-item">
-            <img
-              src="./images/photo-gallery/interior/miniatures/4.jpg"
-              alt="Наша работа"
-              class="photo-gallery__photo"
-              data-full-image="./images/photo-gallery/interior/large/4.jpg"
-              data-caption="test"
-            />
-          </li>
-        </ul>
+        <div id="slider3" class="photo-slider__wrapper">
+          <div class="photo-slider__knockout">
+            <div class="photo-slider__to-left"></div>
+            <ul class="photo-slider__slides">
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/1.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image active"
+                  data-full-image="./images/photo-slider3/large/1.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/2.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/2.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/3.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/3.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/4.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/4.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/5.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/5.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/6.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/6.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/7.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/7.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/8.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/8.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/9.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/9.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/10.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/10.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/11.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/11.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/12.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/12.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/13.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/13.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/14.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/14.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/15.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/15.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/16.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/16.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/17.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/17.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/18.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/18.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/19.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/19.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/20.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/20.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/21.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/21.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/22.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/22.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/23.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/23.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/24.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/24.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/25.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/25.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/26.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/26.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/27.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/27.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider3/miniatures/28.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider3/large/28.jpg"
+                  data-caption="test"
+                />
+              </li>
+            </ul>
+            <div class="photo-slider__to-right"></div>
+          </div>
+        </div>
+        <div id="bullets3" class="photo-slider__bullets">
+          <span class="photo-slider__bullet active">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+        </div>
+
         <p class="photo-gallery__description">индивидуальное проектирование</p>
+        <div id="slider4" class="photo-slider__wrapper">
+          <div class="photo-slider__knockout">
+            <div class="photo-slider__to-left"></div>
+            <ul class="photo-slider__slides">
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/1.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image active"
+                  data-full-image="./images/photo-slider4/large/1.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/2.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/2.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/3.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/3.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/4.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/4.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/5.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/5.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/6.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/6.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/7.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/7.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/8.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/8.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/9.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/9.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/10.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/10.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/11.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/11.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/12.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/12.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/13.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/13.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/14.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/14.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/15.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/15.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/16.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/16.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/17.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/17.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/18.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/18.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider4/miniatures/19.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider4/large/19.jpg"
+                  data-caption="test"
+                />
+              </li>
+            </ul>
+            <div class="photo-slider__to-right"></div>
+          </div>
+        </div>
+        <div id="bullets4" class="photo-slider__bullets">
+          <span class="photo-slider__bullet active">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+        </div>
+        
+        <p class="photo-gallery__description">декоративная отделка</p>
+        <div id="slider2" class="photo-slider__wrapper">
+          <div class="photo-slider__knockout">
+            <div class="photo-slider__to-left"></div>
+            <ul class="photo-slider__slides">
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider2/miniatures/1.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image active"
+                  data-full-image="./images/photo-slider2/large/1.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider2/miniatures/2.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider2/large/2.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider2/miniatures/3.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider2/large/3.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider2/miniatures/4.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider2/large/4.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider2/miniatures/5.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider2/large/5.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider2/miniatures/6.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider2/large/6.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider2/miniatures/7.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider2/large/7.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider2/miniatures/8.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider2/large/8.jpg"
+                  data-caption="test"
+                />
+              </li>
+              <li class="photo-slider__slide">
+                <img
+                  src="./images/photo-slider2/miniatures/9.jpg"
+                  alt="Реализованный проект"
+                  class="photo-slider__slide-image"
+                  data-full-image="./images/photo-slider2/large/9.jpg"
+                  data-caption="test"
+                />
+              </li>
+            </ul>
+            <div class="photo-slider__to-right"></div>
+          </div>
+        </div>
+        <div id="bullets2" class="photo-slider__bullets">
+          <span class="photo-slider__bullet active">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+          <span class="photo-slider__bullet">&bull;</span>
+        </div>
+
+  <!-- old gallery -->
+  <!--  <p class="photo-gallery__description">индивидуальное проектирование</p>
         <ul class="photo-gallery__photos">
           <li class="photo-gallery__photos-item">
             <img
@@ -852,12 +1391,12 @@
               data-caption="test"
             />
           </li>
-        </ul>
+        </ul> -->
       </section>
 
       <section class="timeline">
         <span id="timeline" class="anchor" data-id="8"></span>
-        <h2 class="timeline__title">Этапы развития проекта</h2>
+        <h2 class="timeline__title">Этапы создания проекта</h2>
         <ul class="timeline__wrapper">
           <li class="timeline__item timeline__item_bottom">
             <h3 class="timeline__item-title">Звонок в ASK1</h3>
@@ -939,13 +1478,13 @@
           <ul class="footer__social">
             <li class="footer__social-icon">
               <a
-                href="https://vk.com"
+                href="https://vk.com/club_a1str"
                 class="footer__social-icon-link footer__social-icon-link_vk"
               ></a>
             </li>
             <li class="footer__social-icon">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/architect_napolskaya"
                 class="footer__social-icon-link footer__social-icon-link_ig"
               ></a>
             </li>
@@ -1008,7 +1547,7 @@
           <input
             class="popup-backcall__form-input-text"
             type="tel"
-            id="backcall-mail"
+            id="backcall-phone"
             placeholder="Ваш моб. номер"
             pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
             required
@@ -1021,11 +1560,11 @@
             form="popup-backcall-form"
           />
         </form>
-        <div class="backcall-messsage">
+        <div class="backcall-messsage backcall-messsage_success">
           <span class="backcall-messsage__icon backcall-messsage__icon_success"></span>
           <span class="backcall-message__message">Обратный звонок заказан!</span>
         </div>
-        <div class="backcall-messsage">
+        <div class="backcall-messsage backcall-messsage_fail">
           <span class="backcall-messsage__icon backcall-messsage__icon_fail"></span>
           <span class="backcall-message__message">Произошла ошибка! Попробуйте обновить страницу.</span>
         </div>
@@ -1033,17 +1572,16 @@
     </div>
 
     <div class="up">
-      <div class="up__text">
-        <span class="up__text-item">Коснитесь для перехода выше</span>
-        <span class="up__text-item">Коснитесь 2с для перехода вверх</span>
-      </div>
       <span class="up__up"></span>
     </div>
 
     <script type="module" src="./js/popup-backcall.js"></script>
     <script type="module" src="./js/index.js"></script>
     <script type="module" src="./js/photo-slider.js"></script>
-    <script type="module" src="./js/photo-gallery.js"></script>
+    <script type="module" src="./js/photo-slider2.js"></script>
+    <script type="module" src="./js/photo-slider3.js"></script>
+    <script type="module" src="./js/photo-slider4.js"></script>
+    <!-- <script type="module" src="./js/photo-gallery.js"></script> -->
     <script type="module" src="./js/popup-gallery.js"></script>
     <script type="module" src="./js/up.js"></script>
   </body>
