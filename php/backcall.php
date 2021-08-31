@@ -5,6 +5,7 @@
  require '../PHPMailer/src/Exception.php';
  require '../PHPMailer/src/PHPMailer.php';
 
+ #$mail = new PHPMailer(true);
  $mail = new PHPMailer\PHPMailer\PHPMailer();
  $mail->CharSet = 'UTF-8';
  $mail->setLanguage('ru', '../PHPMailer/language/');
@@ -17,7 +18,7 @@
  //Тема письма
  $mail->Subject = 'Запрос обратного звонка';
 
- $body = '<h1>Пользователь заказал обратный звонок</h1>';
+ $body = '<h3>Пользователь заказал обратный звонок</h3>';
  $body.='<p><strong>Имя: </strong> '.$_POST['name'].'</p>';
  $body.='<p><strong>Телефон: </strong> '.$_POST['phone'].'</p>';
 
