@@ -25,9 +25,17 @@ window.onscroll = function () {
 const popupForm = document.querySelector("#popup-backcall-form");
 const contactForm = document.querySelector("#footer__form");
 
+/* Сообщения popup */
+const success = document.querySelector(".backcall-messsage_success");
+const fail = document.querySelector(".backcall-messsage_fail");
+const loading = document.querySelector(".popup-backcall__loading");
+
 /* Обработка формы обратного звонка */
 popupForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
+
+  popupForm.style.display = "none";
+  loading.style.display = "flex";
 
   fetch("../php/backcall.php", {
     method: "POST",
@@ -39,13 +47,17 @@ popupForm.addEventListener("submit", (evt) => {
       phone: evt.target.querySelector("#backcall-phone").value,
     },
   })
-    .then((res) => {
+    .then((res) => { console.log("res",res)
       if (res.statusText === "OK") {
-        console.log("OK");
+        loading.style.display = "none";
+        success.style.display = "flex";
+      } else {
+        throw new Error('Ошибка');
       }
     })
-    .catch((err) => {
-      console.log("err", err);
+    .catch(() => {
+      loading.style.display = "none";
+      fail.style.display = "flex";
     });
 });
 
@@ -54,7 +66,7 @@ contactForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
   console.log("test contactForm");
 
-  fetch("../php/sendmail.php", {
+  fetch("../php/sendemail.php", {
     method: "POST",
     headers: {
       "Content-Type": "application/json;charset=utf-8",

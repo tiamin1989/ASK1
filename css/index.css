@@ -2316,6 +2316,18 @@ html {
   font-family: "Roboto", Tahoma, sans-serif;
   font-size: 14px;
   padding: 20px;
+  display: none;
+}
+
+.popup-backcall__loading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.popup-backcall__loader {
+  width: 40px;
 }
 
 .backcall-messsage__icon {
