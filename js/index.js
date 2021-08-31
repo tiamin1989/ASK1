@@ -47,7 +47,7 @@ popupForm.addEventListener("submit", (evt) => {
       phone: evt.target.querySelector("#backcall-phone").value,
     },
   })
-    .then((res) => { console.log("res",res)
+    .then((res) => {
       if (res.statusText === "OK") {
         loading.style.display = "none";
         success.style.display = "flex";
