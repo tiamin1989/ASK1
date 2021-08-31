@@ -2,14 +2,12 @@
 @import url("../fonts/hamlin.css");
 @import url("../fonts/blankacyr.css");
 
-/* Плавная проекрутка и гладкие шрифты */
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Якорь для блоков */
 .anchor {
   position: absolute;
   display: block;
