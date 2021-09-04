@@ -1058,9 +1058,14 @@ html {
   visibility: hidden;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1260px) {
   .popup-gallery__left {
     left: 25px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .popup-gallery__left {
     width: 40px;
     height: 40px;
     background-size: 12px;
@@ -1082,7 +1087,7 @@ html {
   position: absolute;
   z-index: 2;
   top: 45%;
-  right: -65px;
+  right: -80px;
   background-color: rgb(230 230 230 / 30%);
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
@@ -1092,9 +1097,14 @@ html {
   visibility: hidden;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1260px) {
   .popup-gallery__right {
     right: 25px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .popup-gallery__right {
     width: 40px;
     height: 40px;
     background-size: 12px;
@@ -1119,17 +1129,10 @@ html {
 }
 
 .popup-gallery__slide {
-  max-height: 100vh;
-  width: 84vw;
   display: none;
   border: 5px #e8e8e8 solid;
   border-radius: 10px;
-}
-
-@media all and (max-width: 800px) {
-  .popup-gallery__slide {
-    width: 100vw;
-  }
+  width: 98vw;
 }
 
 .popup-gallery__slide.active {
@@ -1138,33 +1141,50 @@ html {
 }
 
 .popup-gallery__slide-image {
-  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  max-height: 95vh;
+  object-fit: contain;
 }
 
 .popup-gallery__slide-figure {
+  width: 100%;
   margin: 0;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #e8e8e8;
 }
 
 .popup-gallery__caption {
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
   font-family: "Roboto", Tahoma, sans-serif;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 26px;
   color: #000;
-  transform: translate(-50%);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  display: flex;
+  justify-content: center;
+  background-color: #e8e8e8;
+  padding: 7px 0 0;
+  margin: 0;
+}
+
+@media all and (max-width: 1200px) {
+  .popup-gallery__caption {
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width: 740px) {
+  .popup-gallery__caption {
+    font-size: 16px;
+  }
 }
 
 .photo-gallery {
@@ -1443,6 +1463,7 @@ html {
   height: 60px;
   padding: 0 20px;
   font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif;
   line-height: 1.33;
   width: 100%;
   box-sizing: border-box;
@@ -1536,6 +1557,7 @@ html {
   appearance: none;
   margin: 0;
   padding: 20px 20px;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.33;
   box-sizing: border-box;

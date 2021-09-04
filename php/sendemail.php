@@ -21,7 +21,7 @@
  //От кого письмо
  $mail->setFrom('sendmail@аск1.рф', 'АСК');
  //Кому отправить
- $mail->addAddress('tiamin1989@yandex.ru');
+ $mail->addAddress('a1master02@mail.ru');
  //Тема письма
  $mail->Subject = 'Сообщение от посетителя сайта';
 
