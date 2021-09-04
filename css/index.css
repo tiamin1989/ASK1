@@ -1182,7 +1182,6 @@ html {
   }
 }
 
-
 .photo-gallery__title {
   margin: 0;
   font-family: "Roboto", Tahoma, sans-serif;
@@ -1332,14 +1331,15 @@ html {
   background-size: cover;
   padding: 20px;
   border-radius: 5px;
+  background-position: bottom;
 }
 
 .footer__item-large {
   margin: 0;
   padding: 5px 10px;
   font-family: "Roboto", Arial, sans-serif;
-  font-weight: 300;
-  color: #fff;
+  font-weight: 600;
+  color: #424242;
   line-height: 1.45;
   font-size: 22px;
   display: flex;
@@ -1371,11 +1371,11 @@ html {
   margin: 95px 0 0;
   padding: 5px 10px;
   font-family: "Roboto", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.55;
   font-size: 16px;
   background-color: rgb(193 193 193 / 80%);
-  color: #fff;
+  color: #424242;
   border-radius: 10px;
 }
 
@@ -1419,8 +1419,12 @@ html {
 }
 
 .footer__form-column {
-  display: flex;
+  display: none;
   flex-direction: column;
+}
+
+.footer__form-column.active {
+  display: flex;
 }
 
 @media all and (max-width: 610px) {
@@ -1652,6 +1656,74 @@ html {
   .footer__form-submit {
     font-size: 12px;
   }
+}
+
+.footer__mail-loading {
+  display: none;
+  background: url("../images/loading.gif") no-repeat cover;
+}
+
+.footer__mail-loading.active {
+  display: flex;
+  height: 100%;
+}
+
+.footer__mail-message-success {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__mail-message-success.active {
+  display: flex;
+  height: 100%;
+}
+
+.footer__mail-message-success::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url("../images/success.png") no-repeat;
+  background-size: cover;
+}
+
+.footer__mail-message-success::after {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 600;
+  color: #424242;
+  line-height: 1.45;
+  font-size: 16px;
+  content: "Сообщение успешно отправлено!";
+}
+
+.footer__mail-message-fail {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__mail-message-fail.active {
+  display: flex;
+  height: 100%;
+}
+
+.footer__mail-message-fail::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url("../images/fail.png") no-repeat;
+  background-size: cover;
+}
+
+.footer__mail-message-fail::after {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 600;
+  color: #424242;
+  line-height: 1.45;
+  font-size: 16px;
+  content: "Произошла ошибка при отправке!";
 }
 
 .contacts-block {

@@ -4,6 +4,12 @@
 
  require '../PHPMailer/src/Exception.php';
  require '../PHPMailer/src/PHPMailer.php';
+ 
+ $json_string = file_get_contents('php://input');
+ $post_data = json_decode($json_string, true);
+ 
+ $name =  $post_data['name'];
+ $phone =  $post_data['phone'];
 
  #$mail = new PHPMailer(true);
  $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -18,9 +24,9 @@
  //Тема письма
  $mail->Subject = 'Запрос обратного звонка';
 
- $body = '<h3>Пользователь заказал обратный звонок</h3>';
- $body.='<p><strong>Имя: </strong> '.$_POST['name'].'</p>';
- $body.='<p><strong>Телефон: </strong> '.$_POST['phone'].'</p>';
+ $body = "<h3>Пользователь заказал обратный звонок</h3>";
+ $body.="<p><strong>Имя: </strong>$name</p>";
+ $body.="<p><strong>Телефон: </strong>$phone</p>";
 
  $mail->Body = $body;
 
